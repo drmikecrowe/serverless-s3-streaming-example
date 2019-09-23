@@ -1,0 +1,56 @@
+{
+    "name": "serverless-s3-streaming-example",
+    "version": "1.0.0",
+    "description": "Serverless Project Streaming and Parsing S3 files",
+    "main": "handler.js",
+    "engines": {
+        "node": "10.6.0"
+    },
+    "scripts": {
+        "upload:small": "aws s3 cp fixtures/master-data-small.csv s3://${BUCKET}/dev/uploads/master-data-small.csv",
+        "test": "echo \"No tests yet...\""
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/drmikecrowe/serverless-s3-streaming-example.git"
+    },
+    "keywords": [
+        "aws",
+        "lambda",
+        "serverless",
+        "s3",
+        "csv"
+    ],
+    "author": "Mike Crowe <drmikecrowe@gmail.com>",
+    "homepage": "https://github.com/drmikecrowe/serverless-s3-streaming-example#readme",
+    "bugs": {
+        "url": "https://github.com/drmikecrowe/serverless-s3-streaming-example/issues"
+    },
+    "license": "MIT",
+    "dependencies": {
+        "csv": "^5.1.3",
+        "dalamb": "^0.2.0",
+        "debug": "^4.1.1",
+        "lodash": "^4.17.15",
+        "source-map-support": "^0.5.13"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.5.5",
+        "@babel/preset-env": "^7.5.5",
+        "@babel/preset-typescript": "^7.3.3",
+        "@types/faker": "^4.1.5",
+        "@types/lodash": "^4.14.138",
+        "@types/node": "^8.10.54",
+        "faker": "^4.1.0",
+        "babel-loader": "^8.0.6",
+        "cache-loader": "^4.1.0",
+        "fork-ts-checker-webpack-plugin": "^1.4.3",
+	"serverless": "^1.52.2",
+	"serverless-offline": "^5.11.0",
+	"serverless-webpack": "^5.3.1",
+        "typescript": "^3.5.3",
+        "tslint": "^5.20.0",
+        "webpack": "^4.38.0",
+        "webpack-node-externals": "^1.7.2"
+    }
+}

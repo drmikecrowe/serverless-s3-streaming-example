@@ -1,0 +1,901 @@
+School,Student Grade,Subject,Class,Student Name,Grade
+Green High School,9,World Languages and Cultures,AP German Language and Culture,Tremaine Kuhic,91
+Green High School,9,History & Social Science,AP Statistics,Tremaine Kuhic,81
+Green High School,9,Arts,AP Studio art (3-D design),Tremaine Kuhic,83
+Green High School,9,Vocational Education,Criminal justice,Tremaine Kuhic,96
+Green High School,9,Computer Science/Information Technology,Typing,Tremaine Kuhic,80
+Green High School,9,Sciences,AP Physics 1 (Algebra-Based),Estelle Jacobs,95
+Green High School,9,World Languages and Cultures,AP Japanese Language and Culture,Estelle Jacobs,93
+Green High School,9,Physical Education,Health,Estelle Jacobs,88
+Green High School,9,Computer Science/Information Technology,Computer repair,Estelle Jacobs,92
+Green High School,9,Arts,AP Studio art (3-D design),Estelle Jacobs,99
+Green High School,9,Sciences,AP Chemistry,Judson Considine,96
+Green High School,9,Sciences,AP Physics C (Electricity and Magnetism),Judson Considine,94
+Green High School,9,Visual Arts,Digital media,Judson Considine,96
+Green High School,9,World Languages and Cultures,AP Latin,Judson Considine,88
+Green High School,9,Foreign Language,Arabic,Judson Considine,92
+Green High School,9,Performing Arts,Piano,Quincy Bailey,81
+Green High School,9,Foreign Language,Japanese,Quincy Bailey,84
+Green High School,9,Computer Science/Information Technology,Graphic design,Quincy Bailey,99
+Green High School,9,Vocational Education,Criminal justice,Quincy Bailey,76
+Green High School,9,Business,Marketing,Quincy Bailey,74
+Green High School,9,Foreign Language,Spanish,Everett Nicolas,92
+Green High School,9,Performing Arts,Music theory,Everett Nicolas,76
+Green High School,9,Science,Physical science,Everett Nicolas,95
+Green High School,9,Computer Science/Information Technology,App development,Everett Nicolas,79
+Green High School,9,Sciences,AP Environmental Science,Everett Nicolas,73
+Green High School,9,Business,Introduction to business,Telly Gleason,94
+Green High School,9,Computer Science/Information Technology,Media technology,Telly Gleason,95
+Green High School,9,Business,Marketing,Telly Gleason,86
+Green High School,9,World Languages and Cultures,AP French Language and Culture,Telly Gleason,70
+Green High School,9,English,English literature and composition,Telly Gleason,84
+Green High School,9,History & Social Science,AP United States History,Doris Turner,96
+Green High School,9,Foreign Language,Spanish,Doris Turner,97
+Green High School,9,Social Studies,Macroeconomics,Doris Turner,90
+Green High School,9,Business,Introduction to business,Doris Turner,99
+Green High School,9,Visual Arts,3-D art,Doris Turner,88
+Green High School,9,English,English literature and composition,Alexzander Gibson,74
+Green High School,9,Science,Geology,Alexzander Gibson,77
+Green High School,9,Vocational Education,Metalworking,Alexzander Gibson,74
+Green High School,9,Visual Arts,Sculpture,Alexzander Gibson,88
+Green High School,9,Sciences,AP Biology,Alexzander Gibson,74
+Green High School,9,Business,Marketing,Maryam Balistreri,97
+Green High School,9,History & Social Science,Math & Computer Science,Maryam Balistreri,76
+Green High School,9,Science,Botany,Maryam Balistreri,74
+Green High School,9,Family and Consumer Science,Chemistry of foods,Maryam Balistreri,83
+Green High School,9,World Languages and Cultures,AP German Language and Culture,Maryam Balistreri,99
+Green High School,9,English,Works of Shakespeare,Fannie McGlynn,90
+Green High School,9,Physical Education,Dance,Fannie McGlynn,0
+Green High School,9,Science,Earth science,Fannie McGlynn,100
+Green High School,9,History & Social Science,AP Microeconomics,Fannie McGlynn,97
+Green High School,9,Computer Science/Information Technology,Computer programming,Fannie McGlynn,87
+Green High School,9,Physical Education,Racket sports,Geo Padberg,84
+Green High School,9,Social Studies,US history,Geo Padberg,100
+Green High School,9,Family and Consumer Science,Early childhood development,Geo Padberg,97
+Green High School,9,Arts,AP Studio art (3-D design),Geo Padberg,100
+Green High School,9,Math,Probability,Geo Padberg,73
+Green High School,9,Sciences,AP Biology,Alvis Turner,73
+Green High School,9,World Languages and Cultures,AP German Language and Culture,Alvis Turner,100
+Green High School,9,Arts,AP Studio art (drawing),Alvis Turner,99
+Green High School,9,Computer Science/Information Technology,Animation,Alvis Turner,88
+Green High School,9,English,Poetry,Alvis Turner,100
+Green High School,9,Vocational Education,JROTC (Junior Reserve Officers' Training Corps),Magdalen Leuschke,94
+Green High School,9,Foreign Language,French,Magdalen Leuschke,71
+Green High School,9,Business,Marketing,Magdalen Leuschke,79
+Green High School,9,Computer Science/Information Technology,Video game development,Magdalen Leuschke,98
+Green High School,9,History & Social Science,AP Human Geography,Magdalen Leuschke,79
+Green High School,9,Social Studies,Microeconomics,Elvera Volkman,97
+Green High School,9,Math,Multivariable calculus,Elvera Volkman,91
+Green High School,9,Family and Consumer Science,Fashion and retail merchandising,Elvera Volkman,99
+Green High School,9,English,Creative writing,Elvera Volkman,71
+Green High School,9,World Languages and Cultures,AP Chinese Language and Culture,Elvera Volkman,93
+Green High School,9,English,Communication skills,Rhianna Paucek,72
+Green High School,9,Business,Accounting,Rhianna Paucek,75
+Green High School,9,Performing Arts,Choir,Rhianna Paucek,78
+Green High School,9,Vocational Education,Refrigeration fundamentals,Rhianna Paucek,96
+Green High School,9,Business,Business law,Rhianna Paucek,92
+Green High School,10,Physical Education,Swimming,Gail Koelpin,77
+Green High School,10,Business,Accounting,Gail Koelpin,91
+Green High School,10,Vocational Education,JROTC (Junior Reserve Officers' Training Corps),Gail Koelpin,90
+Green High School,10,World Languages and Cultures,AP Spanish Literature and Culture,Gail Koelpin,88
+Green High School,10,English,Technical writing,Gail Koelpin,0
+Green High School,10,Foreign Language,Hebrew,Rosalia Morissette,93
+Green High School,10,Family and Consumer Science,Family studies,Rosalia Morissette,88
+Green High School,10,History & Social Science,AP Human Geography,Rosalia Morissette,90
+Green High School,10,Science,Geology,Rosalia Morissette,95
+Green High School,10,Physical Education,Aerobics,Rosalia Morissette,94
+Green High School,10,Business,Business law,Marcella White,85
+Green High School,10,Performing Arts,Drama,Marcella White,92
+Green High School,10,Math,Pre-algebra,Marcella White,83
+Green High School,10,Business,Business management,Marcella White,75
+Green High School,10,World Languages and Cultures,AP French Language and Culture,Marcella White,74
+Green High School,10,Vocational Education,JROTC (Junior Reserve Officers' Training Corps),Benny Littel,86
+Green High School,10,Foreign Language,Spanish,Benny Littel,82
+Green High School,10,Arts,AP Studio art (3-D design),Benny Littel,78
+Green High School,10,Business,Personal finance,Benny Littel,71
+Green High School,10,Math,Practical math,Benny Littel,86
+Green High School,10,English,Written and oral communication,Lon Kreiger,90
+Green High School,10,Performing Arts,Percussion,Lon Kreiger,83
+Green High School,10,History & Social Science,AP Calculus BC,Lon Kreiger,96
+Green High School,10,English,Creative writing,Lon Kreiger,93
+Green High School,10,Arts,AP Music theory,Lon Kreiger,79
+Green High School,10,Vocational Education,Driver education,Paris Miller,74
+Green High School,10,Science,Botany,Paris Miller,72
+Green High School,10,Physical Education,Dance,Paris Miller,91
+Green High School,10,Sciences,AP Chemistry,Paris Miller,88
+Green High School,10,Family and Consumer Science,CPR training,Paris Miller,96
+Green High School,10,Business,Introduction to business,Claud Goldner,86
+Green High School,10,Performing Arts,Dance,Claud Goldner,77
+Green High School,10,Foreign Language,Hebrew,Claud Goldner,88
+Green High School,10,Visual Arts,Photography,Claud Goldner,93
+Green High School,10,Physical Education,Dance,Claud Goldner,98
+Green High School,10,Sciences,AP Physics 2 (Algebra-Based),Vernon Lehner,78
+Green High School,10,Science,Agriculture,Vernon Lehner,92
+Green High School,10,Performing Arts,Jazz band,Vernon Lehner,80
+Green High School,10,English,Rhetoric,Vernon Lehner,99
+Green High School,10,World Languages and Cultures,AP Chinese Language and Culture,Vernon Lehner,74
+Green High School,10,World Languages and Cultures,AP Chinese Language and Culture,Lorna Denesik,71
+Green High School,10,English,Journalism,Lorna Denesik,100
+Green High School,10,Business,Consumer education,Lorna Denesik,88
+Green High School,10,Science,Zoology,Lorna Denesik,73
+Green High School,10,Science,Forensic science,Lorna Denesik,94
+Green High School,10,Vocational Education,Auto mechanics,Albin Rippin,90
+Green High School,10,Sciences,AP Chemistry,Albin Rippin,87
+Green High School,10,Physical Education,Gymnastics,Albin Rippin,100
+Green High School,10,World Languages and Cultures,AP Chinese Language and Culture,Albin Rippin,79
+Green High School,10,Foreign Language,Ancient Greek,Albin Rippin,99
+Green High School,10,Performing Arts,World music,Terrence Denesik,70
+Green High School,10,Family and Consumer Science,Early childhood education,Terrence Denesik,70
+Green High School,10,Visual Arts,Ceramics,Terrence Denesik,78
+Green High School,10,Social Studies,Current events,Terrence Denesik,79
+Green High School,10,Physical Education,Weight training,Terrence Denesik,70
+Green High School,10,History & Social Science,AP Microeconomics,Lessie Howe,82
+Green High School,10,Business,Marketing,Lessie Howe,83
+Green High School,10,Visual Arts,Painting,Lessie Howe,80
+Green High School,10,Sciences,AP Physics 1 (Algebra-Based),Lessie Howe,73
+Green High School,10,World Languages and Cultures,AP Spanish Language and Culture,Lessie Howe,71
+Green High School,10,History & Social Science,AP World History,Fae Franecki,74
+Green High School,10,Vocational Education,Metalworking,Fae Franecki,91
+Green High School,10,Science,Environmental studies,Fae Franecki,90
+Green High School,10,Sciences,AP Chemistry,Fae Franecki,70
+Green High School,10,Family and Consumer Science,Early childhood development,Fae Franecki,71
+Green High School,10,Sciences,AP Environmental Science,Gregoria Heller,73
+Green High School,10,Family and Consumer Science,Nutrition,Gregoria Heller,77
+Green High School,10,Vocational Education,Woodworking,Gregoria Heller,82
+Green High School,10,Performing Arts,Jazz band,Gregoria Heller,84
+Green High School,10,Business,Accounting,Gregoria Heller,80
+Green High School,10,Sciences,AP Environmental Science,Jammie Hamill,99
+Green High School,10,Family and Consumer Science,Chemistry of foods,Jammie Hamill,71
+Green High School,10,World Languages and Cultures,AP Japanese Language and Culture,Jammie Hamill,95
+Green High School,10,English,Works of Shakespeare,Jammie Hamill,90
+Green High School,10,Vocational Education,Plumbing,Jammie Hamill,72
+Green High School,11,History & Social Science,AP Psychology,Nelle Mann,96
+Green High School,11,Arts,AP Art history,Nelle Mann,73
+Green High School,11,Business,Business management,Nelle Mann,79
+Green High School,11,History & Social Science,AP Human Geography,Nelle Mann,80
+Green High School,11,Computer Science/Information Technology,Computer repair,Nelle Mann,78
+Green High School,11,Computer Science/Information Technology,Typing,Dianna Monahan,86
+Green High School,11,Vocational Education,Computer-aided drafting,Dianna Monahan,83
+Green High School,11,Vocational Education,Networking,Dianna Monahan,98
+Green High School,11,English,Technical writing,Dianna Monahan,89
+Green High School,11,Sciences,AP Chemistry,Dianna Monahan,88
+Green High School,11,Foreign Language,Ancient Greek,Gladys Wisoky,75
+Green High School,11,Computer Science/Information Technology,App development,Gladys Wisoky,82
+Green High School,11,Arts,AP Studio art (drawing),Gladys Wisoky,93
+Green High School,11,Math,Integrated math,Gladys Wisoky,82
+Green High School,11,Physical Education,Aerobics,Gladys Wisoky,70
+Green High School,11,Performing Arts,Marching band,Eleazar Skiles,76
+Green High School,11,Family and Consumer Science,Early childhood development,Eleazar Skiles,95
+Green High School,11,Foreign Language,Russian,Eleazar Skiles,89
+Green High School,11,Visual Arts,Sculpture,Eleazar Skiles,88
+Green High School,11,Physical Education,Gymnastics,Eleazar Skiles,87
+Green High School,11,History & Social Science,AP Psychology,Brayan Hagenes,97
+Green High School,11,Science,Biology,Brayan Hagenes,99
+Green High School,11,Physical Education,Swimming,Brayan Hagenes,92
+Green High School,11,World Languages and Cultures,AP Italian Language and Culture,Brayan Hagenes,90
+Green High School,11,Business,Marketing,Brayan Hagenes,79
+Green High School,11,Social Studies,Religious studies,Litzy Barton,75
+Green High School,11,Family and Consumer Science,Home economics,Litzy Barton,78
+Green High School,11,History & Social Science,AP Macroeconomics,Litzy Barton,91
+Green High School,11,Science,Oceanography,Litzy Barton,79
+Green High School,11,Family and Consumer Science,Culinary arts,Litzy Barton,82
+Green High School,11,Sciences,AP Environmental Science,Moises Bins,79
+Green High School,11,Science,Oceanography,Moises Bins,84
+Green High School,11,History & Social Science,AP Statistics,Moises Bins,86
+Green High School,11,Math,Statistics,Moises Bins,79
+Green High School,11,History & Social Science,AP Psychology,Moises Bins,82
+Green High School,11,Physical Education,Aerobics,Camila Beatty,96
+Green High School,11,Family and Consumer Science,Early childhood development,Camila Beatty,90
+Green High School,11,Visual Arts,Jewelry design,Camila Beatty,100
+Green High School,11,Math,Quantitative literacy,Camila Beatty,83
+Green High School,11,Family and Consumer Science,Early childhood education,Camila Beatty,83
+Green High School,11,Physical Education,Health,Aimee Lind,95
+Green High School,11,Physical Education,Gymnastics,Aimee Lind,76
+Green High School,11,Arts,AP Studio art (3-D design),Aimee Lind,83
+Green High School,11,Vocational Education,Refrigeration fundamentals,Aimee Lind,83
+Green High School,11,Math,Consumer math,Aimee Lind,81
+Green High School,11,Family and Consumer Science,Home economics,Cydney Langworth,99
+Green High School,11,Math,Calculus,Cydney Langworth,80
+Green High School,11,Business,Personal finance,Cydney Langworth,84
+Green High School,11,Foreign Language,German,Cydney Langworth,85
+Green High School,11,Computer Science/Information Technology,Video game development,Cydney Langworth,93
+Green High School,11,Social Studies,Law,Shirley Tillman,80
+Green High School,11,Social Studies,Microeconomics,Shirley Tillman,73
+Green High School,11,English,Debate,Shirley Tillman,99
+Green High School,11,Physical Education,Pilates,Shirley Tillman,76
+Green High School,11,World Languages and Cultures,AP Spanish Language and Culture,Shirley Tillman,75
+Green High School,11,Vocational Education,JROTC (Junior Reserve Officers' Training Corps),Dawn Ratke,87
+Green High School,11,Performing Arts,Concert band,Dawn Ratke,91
+Green High School,11,Social Studies,Geography,Dawn Ratke,71
+Green High School,11,Computer Science/Information Technology,Graphic design,Dawn Ratke,90
+Green High School,11,Computer Science/Information Technology,Web programming,Dawn Ratke,94
+Green High School,11,Science,Geology,Otis Ratke,75
+Green High School,11,Computer Science/Information Technology,Audio production,Otis Ratke,94
+Green High School,11,Science,Biology,Otis Ratke,81
+Green High School,11,Sciences,AP Physics 2 (Algebra-Based),Otis Ratke,97
+Green High School,11,Arts,AP Studio art (3-D design),Otis Ratke,78
+Green High School,11,Computer Science/Information Technology,Film production,Alek Armstrong,86
+Green High School,11,Family and Consumer Science,Fashion and retail merchandising,Alek Armstrong,79
+Green High School,11,Computer Science/Information Technology,App development,Alek Armstrong,72
+Green High School,11,Arts,AP Studio art (3-D design),Alek Armstrong,91
+Green High School,11,Sciences,AP Biology,Alek Armstrong,78
+Green High School,11,World Languages and Cultures,AP German Language and Culture,Hudson Torphy,88
+Green High School,11,Sciences,AP Biology,Hudson Torphy,70
+Green High School,11,Sciences,AP Physics 1 (Algebra-Based),Hudson Torphy,96
+Green High School,11,Sciences,AP Physics C (Electricity and Magnetism),Hudson Torphy,0
+Green High School,11,Visual Arts,Sculpture,Hudson Torphy,73
+Green High School,12,Family and Consumer Science,Home economics,Merl Kovacek,83
+Green High School,12,Foreign Language,Ancient Greek,Merl Kovacek,75
+Green High School,12,Foreign Language,Korean,Merl Kovacek,75
+Green High School,12,Family and Consumer Science,Chemistry of foods,Merl Kovacek,89
+Green High School,12,Math,Multivariable calculus,Merl Kovacek,0
+Green High School,12,Science,Biology,Tod Wolff,77
+Green High School,12,World Languages and Cultures,AP Spanish Language and Culture,Tod Wolff,99
+Green High School,12,History & Social Science,AP Computer Science A,Tod Wolff,94
+Green High School,12,Foreign Language,German,Tod Wolff,71
+Green High School,12,Science,Physics,Tod Wolff,80
+Green High School,12,English,British literature,Heidi Jakubowski,99
+Green High School,12,Math,Geometry,Heidi Jakubowski,91
+Green High School,12,Sciences,AP Biology,Heidi Jakubowski,73
+Green High School,12,Performing Arts,Marching band,Heidi Jakubowski,70
+Green High School,12,Sciences,AP Physics C (Electricity and Magnetism),Heidi Jakubowski,74
+Green High School,12,Visual Arts,Drawing,Mckenzie Bins,82
+Green High School,12,Arts,AP Music theory,Mckenzie Bins,100
+Green High School,12,Computer Science/Information Technology,Word processing,Mckenzie Bins,100
+Green High School,12,Math,Calculus,Mckenzie Bins,72
+Green High School,12,History & Social Science,AP Psychology,Mckenzie Bins,70
+Green High School,12,Performing Arts,Orchestra,Felix Rohan,71
+Green High School,12,Business,Consumer education,Felix Rohan,76
+Green High School,12,Visual Arts,3-D art,Felix Rohan,93
+Green High School,12,Science,Botany,Felix Rohan,100
+Green High School,12,Family and Consumer Science,Chemistry of foods,Felix Rohan,87
+Green High School,12,Social Studies,World religions,Sharon Jacobi,71
+Green High School,12,Computer Science/Information Technology,Media technology,Sharon Jacobi,77
+Green High School,12,Arts,AP Studio art (3-D design),Sharon Jacobi,98
+Green High School,12,Math,Statistics,Sharon Jacobi,94
+Green High School,12,English,Written and oral communication,Sharon Jacobi,72
+Green High School,12,Social Studies,World religions,Meghan Waters,0
+Green High School,12,Social Studies,Geography,Meghan Waters,74
+Green High School,12,Science,Zoology,Meghan Waters,77
+Green High School,12,Vocational Education,FFA (Future Farmers of America),Meghan Waters,75
+Green High School,12,Foreign Language,German,Meghan Waters,78
+Green High School,12,Vocational Education,Robotics,Tanner Davis,81
+Green High School,12,Sciences,AP Environmental Science,Tanner Davis,92
+Green High School,12,Vocational Education,Heating and cooling systems,Tanner Davis,94
+Green High School,12,Math,Algebra 1,Tanner Davis,73
+Green High School,12,Science,Environmental science,Tanner Davis,74
+Green High School,12,Vocational Education,Cosmetology,Shyann West,96
+Green High School,12,Arts,AP Art history,Shyann West,99
+Green High School,12,Visual Arts,Drawing,Shyann West,94
+Green High School,12,Visual Arts,Art history,Shyann West,77
+Green High School,12,Family and Consumer Science,Interior design,Shyann West,99
+Green High School,12,Vocational Education,Metalworking,Lula Anderson,89
+Green High School,12,Performing Arts,Dance,Lula Anderson,80
+Green High School,12,Visual Arts,Sculpture,Lula Anderson,99
+Green High School,12,Computer Science/Information Technology,Computer programming,Lula Anderson,90
+Green High School,12,Foreign Language,Latin,Lula Anderson,89
+Green High School,12,Computer Science/Information Technology,Web programming,Kip Konopelski,85
+Green High School,12,World Languages and Cultures,AP Japanese Language and Culture,Kip Konopelski,89
+Green High School,12,Business,Business law,Kip Konopelski,77
+Green High School,12,World Languages and Cultures,AP German Language and Culture,Kip Konopelski,83
+Green High School,12,Computer Science/Information Technology,Film production,Kip Konopelski,84
+Green High School,12,Visual Arts,Film production,Mac Windler,95
+Green High School,12,Performing Arts,Dance,Mac Windler,84
+Green High School,12,Family and Consumer Science,Fashion construction,Mac Windler,100
+Green High School,12,Computer Science/Information Technology,Audio production,Mac Windler,80
+Green High School,12,Science,Astronomy,Mac Windler,90
+Green High School,12,Physical Education,Gymnastics,Cynthia Jacobs,78
+Green High School,12,Science,Oceanography,Cynthia Jacobs,80
+Green High School,12,Performing Arts,Choir,Cynthia Jacobs,90
+Green High School,12,Visual Arts,Drawing,Cynthia Jacobs,73
+Green High School,12,History & Social Science,AP European history,Cynthia Jacobs,81
+Green High School,12,Science,Oceanography,Camylle Buckridge,74
+Green High School,12,Business,Business law,Camylle Buckridge,92
+Green High School,12,Physical Education,Dance,Camylle Buckridge,100
+Green High School,12,Sciences,AP Biology,Camylle Buckridge,87
+Green High School,12,Physical Education,Aerobics,Camylle Buckridge,72
+Green High School,12,Social Studies,World politics,Macy Krajcik,0
+Green High School,12,Vocational Education,Woodworking,Macy Krajcik,98
+Green High School,12,Performing Arts,Percussion,Macy Krajcik,70
+Green High School,12,Arts,AP Studio art (drawing),Macy Krajcik,96
+Green High School,12,World Languages and Cultures,AP Latin,Macy Krajcik,86
+Hills High School,9,Physical Education,Yoga,Lula Wolf,79
+Hills High School,9,Family and Consumer Science,Early childhood development,Lula Wolf,91
+Hills High School,9,Vocational Education,Cosmetology,Lula Wolf,70
+Hills High School,9,Sciences,AP Biology,Lula Wolf,81
+Hills High School,9,Social Studies,Current events,Lula Wolf,90
+Hills High School,9,Social Studies,World religions,Maci Davis,73
+Hills High School,9,Family and Consumer Science,Family studies,Maci Davis,71
+Hills High School,9,Foreign Language,Italian,Maci Davis,94
+Hills High School,9,English,Journalism,Maci Davis,72
+Hills High School,9,English,English literature and composition,Maci Davis,99
+Hills High School,9,Social Studies,Political studies,Freddie Erdman,80
+Hills High School,9,Family and Consumer Science,Home economics,Freddie Erdman,94
+Hills High School,9,Physical Education,Dance,Freddie Erdman,93
+Hills High School,9,Vocational Education,Metalworking,Freddie Erdman,77
+Hills High School,9,Visual Arts,Film production,Freddie Erdman,80
+Hills High School,9,English,Communication skills,Dee Lakin,78
+Hills High School,9,Foreign Language,Hebrew,Dee Lakin,99
+Hills High School,9,Foreign Language,French,Dee Lakin,80
+Hills High School,9,Business,Introduction to business,Dee Lakin,74
+Hills High School,9,Sciences,AP Biology,Dee Lakin,85
+Hills High School,9,Arts,AP Art history,Brody Lebsack,76
+Hills High School,9,Performing Arts,Marching band,Brody Lebsack,91
+Hills High School,9,Vocational Education,Robotics,Brody Lebsack,86
+Hills High School,9,English,American literature,Brody Lebsack,86
+Hills High School,9,Social Studies,Political studies,Brody Lebsack,89
+Hills High School,9,Science,Physics,Tommie Walsh,85
+Hills High School,9,Performing Arts,Theater technology,Tommie Walsh,71
+Hills High School,9,Social Studies,Current events,Tommie Walsh,86
+Hills High School,9,Performing Arts,Marching band,Tommie Walsh,87
+Hills High School,9,Physical Education,Aerobics,Tommie Walsh,84
+Hills High School,9,Visual Arts,Painting,Duncan Robel,88
+Hills High School,9,English,Works of Shakespeare,Duncan Robel,79
+Hills High School,9,Arts,AP Studio art (2-D design),Duncan Robel,75
+Hills High School,9,History & Social Science,AP Psychology,Duncan Robel,99
+Hills High School,9,Family and Consumer Science,Chemistry of foods,Duncan Robel,77
+Hills High School,9,Sciences,AP Physics 1 (Algebra-Based),Kelley Streich,98
+Hills High School,9,World Languages and Cultures,AP Spanish Language and Culture,Kelley Streich,71
+Hills High School,9,Science,Agriculture,Kelley Streich,83
+Hills High School,9,Performing Arts,Orchestra,Kelley Streich,77
+Hills High School,9,Arts,AP Art history,Kelley Streich,85
+Hills High School,9,History & Social Science,AP Computer Science A,Danial Cruickshank,97
+Hills High School,9,English,Contemporary literature,Danial Cruickshank,77
+Hills High School,9,Arts,AP Studio art (2-D design),Danial Cruickshank,79
+Hills High School,9,Arts,AP Music theory,Danial Cruickshank,84
+Hills High School,9,History & Social Science,AP United States Government and Politics,Danial Cruickshank,74
+Hills High School,9,Computer Science/Information Technology,Animation,Meaghan Bergstrom,73
+Hills High School,9,Computer Science/Information Technology,Computer repair,Meaghan Bergstrom,88
+Hills High School,9,Foreign Language,Italian,Meaghan Bergstrom,0
+Hills High School,9,Sciences,AP Physics C (Electricity and Magnetism),Meaghan Bergstrom,96
+Hills High School,9,Business,Consumer education,Meaghan Bergstrom,83
+Hills High School,9,Computer Science/Information Technology,Video game development,Tyra Hermiston,85
+Hills High School,9,Performing Arts,Theater technology,Tyra Hermiston,75
+Hills High School,9,Performing Arts,Concert band,Tyra Hermiston,70
+Hills High School,9,Vocational Education,Criminal justice,Tyra Hermiston,75
+Hills High School,9,Visual Arts,Digital media,Tyra Hermiston,79
+Hills High School,9,Vocational Education,Electronics,Coty Kuphal,83
+Hills High School,9,Science,Geology,Coty Kuphal,89
+Hills High School,9,Business,Business management,Coty Kuphal,86
+Hills High School,9,Sciences,AP Physics C (Electricity and Magnetism),Coty Kuphal,96
+Hills High School,9,Sciences,AP Environmental Science,Coty Kuphal,93
+Hills High School,9,Business,Personal finance,Mavis O'Kon,94
+Hills High School,9,Performing Arts,Music theory,Mavis O'Kon,91
+Hills High School,9,Sciences,AP Physics C (Electricity and Magnetism),Mavis O'Kon,90
+Hills High School,9,Visual Arts,Photography,Mavis O'Kon,92
+Hills High School,9,Vocational Education,FFA (Future Farmers of America),Mavis O'Kon,87
+Hills High School,9,Visual Arts,Printmaking,Sincere Price,0
+Hills High School,9,Math,Algebra 2,Sincere Price,71
+Hills High School,9,Social Studies,European history,Sincere Price,74
+Hills High School,9,Business,Accounting,Sincere Price,78
+Hills High School,9,Physical Education,Swimming,Sincere Price,91
+Hills High School,9,Visual Arts,3-D art,Lupe Torphy,94
+Hills High School,9,Foreign Language,American Sign Language,Lupe Torphy,92
+Hills High School,9,World Languages and Cultures,AP Spanish Literature and Culture,Lupe Torphy,75
+Hills High School,9,Physical Education,Swimming,Lupe Torphy,99
+Hills High School,9,History & Social Science,AP United States History,Lupe Torphy,73
+Hills High School,10,Computer Science/Information Technology,Computer programming,Sim Morissette,83
+Hills High School,10,History & Social Science,AP United States History,Sim Morissette,90
+Hills High School,10,Visual Arts,Digital media,Sim Morissette,78
+Hills High School,10,Arts,AP Music theory,Sim Morissette,81
+Hills High School,10,Performing Arts,World music,Sim Morissette,73
+Hills High School,10,English,Poetry,Lavern Schultz,98
+Hills High School,10,Family and Consumer Science,Interior design,Lavern Schultz,70
+Hills High School,10,Foreign Language,American Sign Language,Lavern Schultz,0
+Hills High School,10,Performing Arts,Jazz band,Lavern Schultz,95
+Hills High School,10,World Languages and Cultures,AP Japanese Language and Culture,Lavern Schultz,82
+Hills High School,10,Physical Education,Aerobics,Kristin Nienow,82
+Hills High School,10,Vocational Education,Auto mechanics,Kristin Nienow,79
+Hills High School,10,Sciences,AP Physics C (Electricity and Magnetism),Kristin Nienow,82
+Hills High School,10,Math,Geometry,Kristin Nienow,95
+Hills High School,10,Computer Science/Information Technology,Typing,Kristin Nienow,91
+Hills High School,10,Computer Science/Information Technology,Typing,Lorenza Yost,94
+Hills High School,10,History & Social Science,AP Computer Science Principles,Lorenza Yost,80
+Hills High School,10,Physical Education,Gymnastics,Lorenza Yost,76
+Hills High School,10,Arts,AP Studio art (3-D design),Lorenza Yost,85
+Hills High School,10,Computer Science/Information Technology,App development,Lorenza Yost,94
+Hills High School,10,History & Social Science,AP Macroeconomics,Eryn Shields,82
+Hills High School,10,Performing Arts,Drama,Eryn Shields,74
+Hills High School,10,English,Contemporary literature,Eryn Shields,78
+Hills High School,10,Family and Consumer Science,Culinary arts,Eryn Shields,85
+Hills High School,10,Math,Pre-calculus,Eryn Shields,84
+Hills High School,10,Computer Science/Information Technology,Computer programming,Ernest Little,100
+Hills High School,10,Family and Consumer Science,CPR training,Ernest Little,86
+Hills High School,10,Family and Consumer Science,Fashion construction,Ernest Little,92
+Hills High School,10,Math,Calculus,Ernest Little,85
+Hills High School,10,Physical Education,Health,Ernest Little,79
+Hills High School,10,Visual Arts,Art history,Colby Hodkiewicz,98
+Hills High School,10,Performing Arts,Marching band,Colby Hodkiewicz,0
+Hills High School,10,Family and Consumer Science,Family studies,Colby Hodkiewicz,93
+Hills High School,10,Sciences,AP Physics C (Electricity and Magnetism),Colby Hodkiewicz,89
+Hills High School,10,Physical Education,Lifeguard training,Colby Hodkiewicz,90
+Hills High School,10,Visual Arts,Photography,Nicholas Hamill,94
+Hills High School,10,World Languages and Cultures,AP Japanese Language and Culture,Nicholas Hamill,82
+Hills High School,10,Sciences,AP Physics C (Electricity and Magnetism),Nicholas Hamill,85
+Hills High School,10,Math,Calculus,Nicholas Hamill,84
+Hills High School,10,Physical Education,Lifeguard training,Nicholas Hamill,81
+Hills High School,10,Business,Business management,Verner O'Kon,0
+Hills High School,10,Foreign Language,Korean,Verner O'Kon,92
+Hills High School,10,Visual Arts,Sculpture,Verner O'Kon,97
+Hills High School,10,English,Rhetoric,Verner O'Kon,95
+Hills High School,10,Science,Electronics,Verner O'Kon,90
+Hills High School,10,Computer Science/Information Technology,Video game development,Asa Larson,71
+Hills High School,10,World Languages and Cultures,AP Spanish Literature and Culture,Asa Larson,82
+Hills High School,10,Social Studies,Sociology,Asa Larson,93
+Hills High School,10,Family and Consumer Science,CPR training,Asa Larson,86
+Hills High School,10,Computer Science/Information Technology,Animation,Asa Larson,0
+Hills High School,10,Business,Marketing,Stephanie Dooley,0
+Hills High School,10,Business,Introduction to business,Stephanie Dooley,84
+Hills High School,10,Foreign Language,French,Stephanie Dooley,98
+Hills High School,10,Foreign Language,Ancient Greek,Stephanie Dooley,73
+Hills High School,10,Family and Consumer Science,Early childhood development,Stephanie Dooley,73
+Hills High School,10,Social Studies,US government,Shaniya Reinger,95
+Hills High School,10,Visual Arts,Jewelry design,Shaniya Reinger,0
+Hills High School,10,Family and Consumer Science,CPR training,Shaniya Reinger,75
+Hills High School,10,Business,Introduction to business,Shaniya Reinger,92
+Hills High School,10,Vocational Education,Robotics,Shaniya Reinger,91
+Hills High School,10,Business,Personal finance,Zachary Johnson,100
+Hills High School,10,Physical Education,Yoga,Zachary Johnson,0
+Hills High School,10,Performing Arts,Concert band,Zachary Johnson,95
+Hills High School,10,Arts,AP Studio art (3-D design),Zachary Johnson,87
+Hills High School,10,Performing Arts,Drama,Zachary Johnson,73
+Hills High School,10,Sciences,AP Environmental Science,Verna Thompson,79
+Hills High School,10,Science,Biology,Verna Thompson,99
+Hills High School,10,Social Studies,Women’s studies,Verna Thompson,81
+Hills High School,10,Performing Arts,Drama,Verna Thompson,77
+Hills High School,10,Science,Zoology,Verna Thompson,96
+Hills High School,10,Computer Science/Information Technology,Audio production,Assunta Kunde,82
+Hills High School,10,English,British literature,Assunta Kunde,71
+Hills High School,10,English,Humanities,Assunta Kunde,0
+Hills High School,10,Business,Personal finance,Assunta Kunde,85
+Hills High School,10,Family and Consumer Science,Fashion and retail merchandising,Assunta Kunde,87
+Hills High School,11,Vocational Education,Robotics,Geo Kiehn,97
+Hills High School,11,Performing Arts,Guitar,Geo Kiehn,84
+Hills High School,11,Foreign Language,French,Geo Kiehn,92
+Hills High School,11,Math,Multivariable calculus,Geo Kiehn,83
+Hills High School,11,Computer Science/Information Technology,Web design,Geo Kiehn,86
+Hills High School,11,World Languages and Cultures,AP French Language and Culture,Obie Hoppe,96
+Hills High School,11,Family and Consumer Science,Early childhood education,Obie Hoppe,79
+Hills High School,11,Computer Science/Information Technology,Computer repair,Obie Hoppe,83
+Hills High School,11,World Languages and Cultures,AP Latin,Obie Hoppe,93
+Hills High School,11,Visual Arts,Photography,Obie Hoppe,83
+Hills High School,11,Visual Arts,Ceramics,Lenna Pagac,72
+Hills High School,11,Vocational Education,Plumbing,Lenna Pagac,83
+Hills High School,11,History & Social Science,AP United States History,Lenna Pagac,0
+Hills High School,11,Family and Consumer Science,Home economics,Lenna Pagac,76
+Hills High School,11,Social Studies,World history,Lenna Pagac,86
+Hills High School,11,Arts,AP Art history,Kariane Dietrich,95
+Hills High School,11,World Languages and Cultures,AP Chinese Language and Culture,Kariane Dietrich,95
+Hills High School,11,Social Studies,Law,Kariane Dietrich,80
+Hills High School,11,Foreign Language,Ancient Greek,Kariane Dietrich,79
+Hills High School,11,Arts,AP Studio art (3-D design),Kariane Dietrich,72
+Hills High School,11,Social Studies,International relations,Elouise Gislason,97
+Hills High School,11,English,Literary analysis,Elouise Gislason,82
+Hills High School,11,Sciences,AP Physics 1 (Algebra-Based),Elouise Gislason,85
+Hills High School,11,Physical Education,Yoga,Elouise Gislason,77
+Hills High School,11,Arts,AP Art history,Elouise Gislason,88
+Hills High School,11,Arts,AP Studio art (drawing),Valerie Schneider,91
+Hills High School,11,Arts,AP Art history,Valerie Schneider,72
+Hills High School,11,Performing Arts,Theater technology,Valerie Schneider,89
+Hills High School,11,History & Social Science,AP Statistics,Valerie Schneider,100
+Hills High School,11,Math,Pre-algebra,Valerie Schneider,97
+Hills High School,11,History & Social Science,AP Calculus BC,Malcolm Rodriguez,94
+Hills High School,11,Performing Arts,Percussion,Malcolm Rodriguez,84
+Hills High School,11,Vocational Education,Refrigeration fundamentals,Malcolm Rodriguez,96
+Hills High School,11,Physical Education,Specialized sports,Malcolm Rodriguez,83
+Hills High School,11,Visual Arts,Ceramics,Malcolm Rodriguez,86
+Hills High School,11,Computer Science/Information Technology,Film production,Arianna Wunsch,94
+Hills High School,11,Business,Personal finance,Arianna Wunsch,78
+Hills High School,11,Math,Algebra 1,Arianna Wunsch,94
+Hills High School,11,Math,Pre-calculus,Arianna Wunsch,90
+Hills High School,11,Physical Education,Aerobics,Arianna Wunsch,81
+Hills High School,11,Physical Education,Swimming,Dortha Cummerata,85
+Hills High School,11,Physical Education,Pilates,Dortha Cummerata,88
+Hills High School,11,Foreign Language,Korean,Dortha Cummerata,0
+Hills High School,11,World Languages and Cultures,AP Spanish Language and Culture,Dortha Cummerata,75
+Hills High School,11,Computer Science/Information Technology,Music production,Dortha Cummerata,75
+Hills High School,11,Computer Science/Information Technology,Music production,Gwendolyn Pacocha,95
+Hills High School,11,Science,Environmental studies,Gwendolyn Pacocha,79
+Hills High School,11,History & Social Science,AP World History,Gwendolyn Pacocha,98
+Hills High School,11,Sciences,AP Chemistry,Gwendolyn Pacocha,80
+Hills High School,11,World Languages and Cultures,AP German Language and Culture,Gwendolyn Pacocha,97
+Hills High School,11,Computer Science/Information Technology,Graphic design,Jerad Ullrich,70
+Hills High School,11,Arts,AP Music theory,Jerad Ullrich,84
+Hills High School,11,Social Studies,Psychology,Jerad Ullrich,78
+Hills High School,11,Math,Integrated math,Jerad Ullrich,82
+Hills High School,11,Computer Science/Information Technology,Web programming,Jerad Ullrich,96
+Hills High School,11,Math,Algebra 2,Corene Swaniawski,73
+Hills High School,11,Vocational Education,JROTC (Junior Reserve Officers' Training Corps),Corene Swaniawski,77
+Hills High School,11,Sciences,AP Physics 1 (Algebra-Based),Corene Swaniawski,0
+Hills High School,11,History & Social Science,Math & Computer Science,Corene Swaniawski,76
+Hills High School,11,World Languages and Cultures,AP German Language and Culture,Corene Swaniawski,96
+Hills High School,11,Foreign Language,Korean,Winnifred Cummings,84
+Hills High School,11,Business,Consumer education,Winnifred Cummings,94
+Hills High School,11,Physical Education,Lifeguard training,Winnifred Cummings,100
+Hills High School,11,Physical Education,Swimming,Winnifred Cummings,90
+Hills High School,11,Social Studies,Geography,Winnifred Cummings,89
+Hills High School,11,Performing Arts,Guitar,Alycia Huel,89
+Hills High School,11,Business,Introduction to business,Alycia Huel,85
+Hills High School,11,World Languages and Cultures,AP French Language and Culture,Alycia Huel,92
+Hills High School,11,Family and Consumer Science,Interior design,Alycia Huel,75
+Hills High School,11,Sciences,AP Physics 2 (Algebra-Based),Alycia Huel,80
+Hills High School,11,Visual Arts,Sculpture,Meggie Watsica,79
+Hills High School,11,Science,Chemistry,Meggie Watsica,77
+Hills High School,11,Visual Arts,3-D art,Meggie Watsica,100
+Hills High School,11,Performing Arts,Piano,Meggie Watsica,90
+Hills High School,11,Science,Environmental studies,Meggie Watsica,96
+Hills High School,12,History & Social Science,AP United States History,Jeramy Von,99
+Hills High School,12,History & Social Science,AP Comparative government and politics,Jeramy Von,71
+Hills High School,12,Visual Arts,Digital media,Jeramy Von,79
+Hills High School,12,English,Debate,Jeramy Von,86
+Hills High School,12,Arts,AP Studio art (drawing),Jeramy Von,73
+Hills High School,12,Business,Business management,Mattie Ratke,87
+Hills High School,12,Family and Consumer Science,Family studies,Mattie Ratke,75
+Hills High School,12,History & Social Science,AP Statistics,Mattie Ratke,78
+Hills High School,12,Visual Arts,Jewelry design,Mattie Ratke,90
+Hills High School,12,Foreign Language,American Sign Language,Mattie Ratke,78
+Hills High School,12,Social Studies,European history,Jerald Deckow,93
+Hills High School,12,Visual Arts,Painting,Jerald Deckow,77
+Hills High School,12,Sciences,AP Physics C (Electricity and Magnetism),Jerald Deckow,94
+Hills High School,12,English,Technical writing,Jerald Deckow,91
+Hills High School,12,Social Studies,Microeconomics,Jerald Deckow,95
+Hills High School,12,World Languages and Cultures,AP German Language and Culture,Isadore Kemmer,79
+Hills High School,12,Sciences,AP Biology,Isadore Kemmer,99
+Hills High School,12,Social Studies,Law,Isadore Kemmer,73
+Hills High School,12,Business,Introduction to business,Isadore Kemmer,79
+Hills High School,12,English,Literary analysis,Isadore Kemmer,75
+Hills High School,12,History & Social Science,AP Human Geography,Brennan Medhurst,85
+Hills High School,12,Performing Arts,Percussion,Brennan Medhurst,95
+Hills High School,12,Science,Marine biology,Brennan Medhurst,81
+Hills High School,12,Vocational Education,Woodworking,Brennan Medhurst,98
+Hills High School,12,Physical Education,Dance,Brennan Medhurst,99
+Hills High School,12,Family and Consumer Science,Early childhood education,Rebeka Hilpert,74
+Hills High School,12,Physical Education,Gymnastics,Rebeka Hilpert,95
+Hills High School,12,World Languages and Cultures,AP French Language and Culture,Rebeka Hilpert,80
+Hills High School,12,Performing Arts,Piano,Rebeka Hilpert,70
+Hills High School,12,Social Studies,Physical anthropology,Rebeka Hilpert,96
+Hills High School,12,Science,Physical science,Stephany Walsh,80
+Hills High School,12,Social Studies,US history,Stephany Walsh,74
+Hills High School,12,World Languages and Cultures,AP Spanish Language and Culture,Stephany Walsh,95
+Hills High School,12,Computer Science/Information Technology,Typing,Stephany Walsh,70
+Hills High School,12,Visual Arts,Film production,Stephany Walsh,82
+Hills High School,12,Family and Consumer Science,Culinary arts,Laverna Thiel,81
+Hills High School,12,Visual Arts,Sculpture,Laverna Thiel,91
+Hills High School,12,Computer Science/Information Technology,Video game development,Laverna Thiel,70
+Hills High School,12,Arts,AP Studio art (2-D design),Laverna Thiel,78
+Hills High School,12,Foreign Language,Japanese,Laverna Thiel,92
+Hills High School,12,Visual Arts,Painting,Walton Mueller,76
+Hills High School,12,Performing Arts,World music,Walton Mueller,74
+Hills High School,12,Math,Integrated math,Walton Mueller,88
+Hills High School,12,Performing Arts,Guitar,Walton Mueller,71
+Hills High School,12,Family and Consumer Science,Early childhood development,Walton Mueller,84
+Hills High School,12,Family and Consumer Science,Early childhood development,Luna Bradtke,0
+Hills High School,12,Visual Arts,Printmaking,Luna Bradtke,0
+Hills High School,12,Vocational Education,Auto mechanics,Luna Bradtke,77
+Hills High School,12,Foreign Language,Russian,Luna Bradtke,99
+Hills High School,12,Vocational Education,Plumbing,Luna Bradtke,96
+Hills High School,12,Performing Arts,Concert band,Zoie Kohler,93
+Hills High School,12,History & Social Science,AP Computer Science A,Zoie Kohler,88
+Hills High School,12,Math,Practical math,Zoie Kohler,100
+Hills High School,12,Sciences,AP Chemistry,Zoie Kohler,76
+Hills High School,12,Computer Science/Information Technology,Graphic design,Zoie Kohler,97
+Hills High School,12,Visual Arts,Jewelry design,Nash Thompson,89
+Hills High School,12,Social Studies,Physical anthropology,Nash Thompson,71
+Hills High School,12,Social Studies,Modern world studies,Nash Thompson,79
+Hills High School,12,Sciences,AP Physics C (Electricity and Magnetism),Nash Thompson,70
+Hills High School,12,Science,Agriculture,Nash Thompson,100
+Hills High School,12,Performing Arts,Jazz band,Monserrate Balistreri,73
+Hills High School,12,Social Studies,Modern world studies,Monserrate Balistreri,86
+Hills High School,12,Computer Science/Information Technology,App development,Monserrate Balistreri,85
+Hills High School,12,Social Studies,World history,Monserrate Balistreri,95
+Hills High School,12,History & Social Science,AP United States Government and Politics,Monserrate Balistreri,75
+Hills High School,12,Foreign Language,German,Ottilie Olson,86
+Hills High School,12,Foreign Language,Ancient Greek,Ottilie Olson,93
+Hills High School,12,Business,Personal finance,Ottilie Olson,92
+Hills High School,12,Family and Consumer Science,CPR training,Ottilie Olson,76
+Hills High School,12,Social Studies,World history,Ottilie Olson,0
+Hills High School,12,Math,Geometry,Brando Nicolas,80
+Hills High School,12,English,Works of Shakespeare,Brando Nicolas,72
+Hills High School,12,Math,Pre-calculus,Brando Nicolas,98
+Hills High School,12,Business,Consumer education,Brando Nicolas,92
+Hills High School,12,Physical Education,Pilates,Brando Nicolas,81
+Hessel High School,9,Computer Science/Information Technology,Computer programming,Gino Daugherty,93
+Hessel High School,9,Vocational Education,Criminal justice,Gino Daugherty,92
+Hessel High School,9,Computer Science/Information Technology,Web programming,Gino Daugherty,70
+Hessel High School,9,Visual Arts,Printmaking,Gino Daugherty,82
+Hessel High School,9,World Languages and Cultures,AP Spanish Literature and Culture,Gino Daugherty,74
+Hessel High School,9,Social Studies,Religious studies,Lauriane Beatty,79
+Hessel High School,9,History & Social Science,AP Microeconomics,Lauriane Beatty,100
+Hessel High School,9,English,Rhetoric,Lauriane Beatty,84
+Hessel High School,9,Social Studies,World religions,Lauriane Beatty,83
+Hessel High School,9,Performing Arts,World music,Lauriane Beatty,92
+Hessel High School,9,Math,Statistics,Afton Kris,74
+Hessel High School,9,Math,Probability,Afton Kris,0
+Hessel High School,9,Performing Arts,World music,Afton Kris,91
+Hessel High School,9,Math,Consumer math,Afton Kris,87
+Hessel High School,9,Family and Consumer Science,CPR training,Afton Kris,86
+Hessel High School,9,Foreign Language,Japanese,Robert Baumbach,87
+Hessel High School,9,English,Technical writing,Robert Baumbach,88
+Hessel High School,9,Sciences,AP Biology,Robert Baumbach,82
+Hessel High School,9,Business,Marketing,Robert Baumbach,91
+Hessel High School,9,History & Social Science,AP Computer Science A,Robert Baumbach,75
+Hessel High School,9,Social Studies,Cultural anthropology,Nicolas Streich,80
+Hessel High School,9,World Languages and Cultures,AP Spanish Literature and Culture,Nicolas Streich,100
+Hessel High School,9,Science,Botany,Nicolas Streich,89
+Hessel High School,9,Science,Astronomy,Nicolas Streich,86
+Hessel High School,9,Sciences,AP Chemistry,Nicolas Streich,73
+Hessel High School,9,Math,Pre-algebra,Icie Stehr,95
+Hessel High School,9,Visual Arts,Art history,Icie Stehr,89
+Hessel High School,9,Science,Forensic science,Icie Stehr,91
+Hessel High School,9,Computer Science/Information Technology,Animation,Icie Stehr,86
+Hessel High School,9,Visual Arts,Film production,Icie Stehr,74
+Hessel High School,9,Social Studies,Global studies,Deja Torp,72
+Hessel High School,9,Foreign Language,Japanese,Deja Torp,93
+Hessel High School,9,Math,Practical math,Deja Torp,80
+Hessel High School,9,Family and Consumer Science,CPR training,Deja Torp,71
+Hessel High School,9,History & Social Science,AP World History,Deja Torp,94
+Hessel High School,9,Science,Oceanography,Brendan Nicolas,84
+Hessel High School,9,World Languages and Cultures,AP French Language and Culture,Brendan Nicolas,99
+Hessel High School,9,Performing Arts,Drama,Brendan Nicolas,94
+Hessel High School,9,Foreign Language,Russian,Brendan Nicolas,99
+Hessel High School,9,Performing Arts,Jazz band,Brendan Nicolas,93
+Hessel High School,9,Sciences,AP Biology,Celestine Lindgren,94
+Hessel High School,9,Business,Accounting,Celestine Lindgren,74
+Hessel High School,9,Family and Consumer Science,Early childhood education,Celestine Lindgren,95
+Hessel High School,9,Social Studies,Sociology,Celestine Lindgren,87
+Hessel High School,9,Vocational Education,Heating and cooling systems,Celestine Lindgren,78
+Hessel High School,9,Arts,AP Music theory,Johnson Bradtke,78
+Hessel High School,9,Social Studies,Microeconomics,Johnson Bradtke,99
+Hessel High School,9,Business,Entrepreneurial skills,Johnson Bradtke,97
+Hessel High School,9,Family and Consumer Science,Home economics,Johnson Bradtke,81
+Hessel High School,9,World Languages and Cultures,AP German Language and Culture,Johnson Bradtke,97
+Hessel High School,9,Business,Business law,Charlotte Feeney,77
+Hessel High School,9,Physical Education,Swimming,Charlotte Feeney,100
+Hessel High School,9,Physical Education,Yoga,Charlotte Feeney,76
+Hessel High School,9,History & Social Science,AP Statistics,Charlotte Feeney,85
+Hessel High School,9,History & Social Science,AP Human Geography,Charlotte Feeney,84
+Hessel High School,9,Visual Arts,Ceramics,Dan Brakus,94
+Hessel High School,9,History & Social Science,AP European history,Dan Brakus,100
+Hessel High School,9,Math,Statistics,Dan Brakus,74
+Hessel High School,9,Social Studies,Physical anthropology,Dan Brakus,76
+Hessel High School,9,Social Studies,International relations,Dan Brakus,92
+Hessel High School,9,English,Creative writing,Jerod Morar,100
+Hessel High School,9,Foreign Language,Latin,Jerod Morar,82
+Hessel High School,9,Computer Science/Information Technology,Web design,Jerod Morar,74
+Hessel High School,9,Sciences,AP Environmental Science,Jerod Morar,79
+Hessel High School,9,English,Humanities,Jerod Morar,71
+Hessel High School,9,Performing Arts,Choir,Elbert Fay,70
+Hessel High School,9,Foreign Language,American Sign Language,Elbert Fay,88
+Hessel High School,9,Sciences,AP Physics C (Electricity and Magnetism),Elbert Fay,0
+Hessel High School,9,Visual Arts,Film production,Elbert Fay,0
+Hessel High School,9,Math,Trigonometry,Elbert Fay,81
+Hessel High School,9,Science,Chemistry,Camryn Fadel,94
+Hessel High School,9,Family and Consumer Science,Early childhood education,Camryn Fadel,80
+Hessel High School,9,English,Debate,Camryn Fadel,93
+Hessel High School,9,Business,Accounting,Camryn Fadel,89
+Hessel High School,9,Math,Algebra 2,Camryn Fadel,95
+Hessel High School,10,Visual Arts,3-D art,Korey Bartell,81
+Hessel High School,10,Business,Business law,Korey Bartell,85
+Hessel High School,10,English,Modern literature,Korey Bartell,93
+Hessel High School,10,Arts,AP Studio art (2-D design),Korey Bartell,0
+Hessel High School,10,English,English literature and composition,Korey Bartell,74
+Hessel High School,10,Business,Business law,Cleveland Hintz,85
+Hessel High School,10,Vocational Education,FFA (Future Farmers of America),Cleveland Hintz,91
+Hessel High School,10,Arts,AP Studio art (drawing),Cleveland Hintz,87
+Hessel High School,10,Business,Consumer education,Cleveland Hintz,94
+Hessel High School,10,Computer Science/Information Technology,Film production,Cleveland Hintz,76
+Hessel High School,10,Family and Consumer Science,Early childhood development,Tyler Wiegand,97
+Hessel High School,10,Social Studies,Physical anthropology,Tyler Wiegand,79
+Hessel High School,10,English,Communication skills,Tyler Wiegand,77
+Hessel High School,10,History & Social Science,AP Macroeconomics,Tyler Wiegand,97
+Hessel High School,10,Science,Chemistry,Tyler Wiegand,92
+Hessel High School,10,Business,Business law,Alexane Greenfelder,87
+Hessel High School,10,Business,Marketing,Alexane Greenfelder,75
+Hessel High School,10,Foreign Language,Russian,Alexane Greenfelder,75
+Hessel High School,10,World Languages and Cultures,AP Spanish Language and Culture,Alexane Greenfelder,92
+Hessel High School,10,Science,Zoology,Alexane Greenfelder,85
+Hessel High School,10,Physical Education,Yoga,Harmony MacGyver,100
+Hessel High School,10,Social Studies,US government,Harmony MacGyver,87
+Hessel High School,10,Science,Oceanography,Harmony MacGyver,95
+Hessel High School,10,Arts,AP Studio art (drawing),Harmony MacGyver,82
+Hessel High School,10,Sciences,AP Biology,Harmony MacGyver,82
+Hessel High School,10,Family and Consumer Science,Culinary arts,Autumn Douglas,95
+Hessel High School,10,English,Humanities,Autumn Douglas,100
+Hessel High School,10,Performing Arts,Jazz band,Autumn Douglas,92
+Hessel High School,10,Math,Integrated math,Autumn Douglas,82
+Hessel High School,10,Arts,AP Art history,Autumn Douglas,92
+Hessel High School,10,Math,Integrated math,Corrine Torp,77
+Hessel High School,10,World Languages and Cultures,AP Latin,Corrine Torp,70
+Hessel High School,10,Family and Consumer Science,Early childhood education,Corrine Torp,71
+Hessel High School,10,Computer Science/Information Technology,Word processing,Corrine Torp,80
+Hessel High School,10,Social Studies,Psychology,Corrine Torp,74
+Hessel High School,10,Vocational Education,Robotics,Felipa Wilkinson,83
+Hessel High School,10,Visual Arts,Photography,Felipa Wilkinson,86
+Hessel High School,10,Foreign Language,Portuguese,Felipa Wilkinson,76
+Hessel High School,10,History & Social Science,AP Calculus BC,Felipa Wilkinson,91
+Hessel High School,10,Computer Science/Information Technology,Typing,Felipa Wilkinson,75
+Hessel High School,10,Social Studies,Global studies,Melba Tromp,78
+Hessel High School,10,Social Studies,Modern world studies,Melba Tromp,71
+Hessel High School,10,Family and Consumer Science,Fashion and retail merchandising,Melba Tromp,79
+Hessel High School,10,Science,Electronics,Melba Tromp,91
+Hessel High School,10,English,Technical writing,Melba Tromp,90
+Hessel High School,10,Visual Arts,Ceramics,Junior O'Connell,79
+Hessel High School,10,Social Studies,Sociology,Junior O'Connell,94
+Hessel High School,10,Science,Environmental studies,Junior O'Connell,80
+Hessel High School,10,Computer Science/Information Technology,Music production,Junior O'Connell,89
+Hessel High School,10,Vocational Education,Plumbing,Junior O'Connell,96
+Hessel High School,10,Social Studies,Human geography,Alvina Fritsch,97
+Hessel High School,10,Physical Education,Pilates,Alvina Fritsch,90
+Hessel High School,10,Physical Education,Lifeguard training,Alvina Fritsch,70
+Hessel High School,10,World Languages and Cultures,AP Spanish Literature and Culture,Alvina Fritsch,98
+Hessel High School,10,Foreign Language,Latin,Alvina Fritsch,0
+Hessel High School,10,Social Studies,European history,Guiseppe Carter,91
+Hessel High School,10,World Languages and Cultures,AP Spanish Language and Culture,Guiseppe Carter,99
+Hessel High School,10,Science,Environmental science,Guiseppe Carter,85
+Hessel High School,10,Business,Marketing,Guiseppe Carter,75
+Hessel High School,10,Visual Arts,Printmaking,Guiseppe Carter,95
+Hessel High School,10,Social Studies,Global studies,Reilly Thompson,81
+Hessel High School,10,Business,Consumer education,Reilly Thompson,92
+Hessel High School,10,Computer Science/Information Technology,Animation,Reilly Thompson,99
+Hessel High School,10,Physical Education,Specialized sports,Reilly Thompson,81
+Hessel High School,10,Physical Education,Weight training,Reilly Thompson,82
+Hessel High School,10,English,Contemporary literature,Justina Runolfsdottir,73
+Hessel High School,10,World Languages and Cultures,AP Italian Language and Culture,Justina Runolfsdottir,88
+Hessel High School,10,English,American literature,Justina Runolfsdottir,96
+Hessel High School,10,Computer Science/Information Technology,Web programming,Justina Runolfsdottir,89
+Hessel High School,10,Visual Arts,Art history,Justina Runolfsdottir,90
+Hessel High School,10,Computer Science/Information Technology,Audio production,Shanna Gulgowski,79
+Hessel High School,10,Performing Arts,Percussion,Shanna Gulgowski,100
+Hessel High School,10,Social Studies,US history,Shanna Gulgowski,73
+Hessel High School,10,Physical Education,Gymnastics,Shanna Gulgowski,88
+Hessel High School,10,Science,Botany,Shanna Gulgowski,94
+Hessel High School,11,Physical Education,Lifeguard training,Melba Mueller,79
+Hessel High School,11,Science,Earth science,Melba Mueller,83
+Hessel High School,11,Visual Arts,Film production,Melba Mueller,90
+Hessel High School,11,Computer Science/Information Technology,Media technology,Melba Mueller,100
+Hessel High School,11,Sciences,AP Biology,Melba Mueller,73
+Hessel High School,11,Math,Algebra 1,Casimir Stoltenberg,70
+Hessel High School,11,Foreign Language,Ancient Greek,Casimir Stoltenberg,77
+Hessel High School,11,History & Social Science,AP Computer Science Principles,Casimir Stoltenberg,74
+Hessel High School,11,Math,Practical math,Casimir Stoltenberg,74
+Hessel High School,11,World Languages and Cultures,AP Spanish Literature and Culture,Casimir Stoltenberg,99
+Hessel High School,11,Social Studies,Religious studies,Ward Keeling,95
+Hessel High School,11,Vocational Education,Criminal justice,Ward Keeling,89
+Hessel High School,11,Arts,AP Studio art (3-D design),Ward Keeling,92
+Hessel High School,11,Computer Science/Information Technology,Music production,Ward Keeling,84
+Hessel High School,11,Visual Arts,Printmaking,Ward Keeling,80
+Hessel High School,11,Physical Education,Aerobics,Myrtis Shanahan,96
+Hessel High School,11,Science,Environmental science,Myrtis Shanahan,90
+Hessel High School,11,Sciences,AP Chemistry,Myrtis Shanahan,96
+Hessel High School,11,Foreign Language,Hebrew,Myrtis Shanahan,79
+Hessel High School,11,Family and Consumer Science,Chemistry of foods,Myrtis Shanahan,85
+Hessel High School,11,Business,Business law,Santina McClure,80
+Hessel High School,11,Arts,AP Music theory,Santina McClure,89
+Hessel High School,11,Sciences,AP Physics C (Electricity and Magnetism),Santina McClure,77
+Hessel High School,11,Foreign Language,German,Santina McClure,84
+Hessel High School,11,World Languages and Cultures,AP Spanish Language and Culture,Santina McClure,89
+Hessel High School,11,Foreign Language,Italian,Shanon Berge,93
+Hessel High School,11,English,English language and composition,Shanon Berge,88
+Hessel High School,11,English,Works of Shakespeare,Shanon Berge,98
+Hessel High School,11,Computer Science/Information Technology,Animation,Shanon Berge,83
+Hessel High School,11,Foreign Language,Korean,Shanon Berge,85
+Hessel High School,11,Foreign Language,Italian,Desiree Brekke,97
+Hessel High School,11,Sciences,AP Biology,Desiree Brekke,84
+Hessel High School,11,Vocational Education,Building construction,Desiree Brekke,89
+Hessel High School,11,Social Studies,Law,Desiree Brekke,93
+Hessel High School,11,Vocational Education,Plumbing,Desiree Brekke,78
+Hessel High School,11,Physical Education,Health,Erica Casper,85
+Hessel High School,11,Computer Science/Information Technology,Music production,Erica Casper,0
+Hessel High School,11,Sciences,AP Chemistry,Erica Casper,96
+Hessel High School,11,Computer Science/Information Technology,Computer programming,Erica Casper,90
+Hessel High School,11,Business,Business law,Erica Casper,81
+Hessel High School,11,Vocational Education,Robotics,Sierra Morissette,82
+Hessel High School,11,Performing Arts,Drama,Sierra Morissette,89
+Hessel High School,11,Foreign Language,Japanese,Sierra Morissette,91
+Hessel High School,11,Math,Multivariable calculus,Sierra Morissette,75
+Hessel High School,11,Vocational Education,Production technology,Sierra Morissette,73
+Hessel High School,11,Sciences,AP Physics 1 (Algebra-Based),Casey King,87
+Hessel High School,11,History & Social Science,AP Microeconomics,Casey King,80
+Hessel High School,11,Science,Physical science,Casey King,0
+Hessel High School,11,Vocational Education,Auto mechanics,Casey King,73
+Hessel High School,11,World Languages and Cultures,AP Italian Language and Culture,Casey King,94
+Hessel High School,11,Math,Pre-algebra,Sasha Gutmann,79
+Hessel High School,11,World Languages and Cultures,AP Latin,Sasha Gutmann,71
+Hessel High School,11,Visual Arts,Drawing,Sasha Gutmann,76
+Hessel High School,11,Foreign Language,Italian,Sasha Gutmann,84
+Hessel High School,11,Social Studies,US government,Sasha Gutmann,97
+Hessel High School,11,Vocational Education,Heating and cooling systems,Ova Bergstrom,77
+Hessel High School,11,Family and Consumer Science,Early childhood development,Ova Bergstrom,73
+Hessel High School,11,Performing Arts,Percussion,Ova Bergstrom,74
+Hessel High School,11,World Languages and Cultures,AP Italian Language and Culture,Ova Bergstrom,73
+Hessel High School,11,Social Studies,Microeconomics,Ova Bergstrom,77
+Hessel High School,11,Foreign Language,Russian,Stacy Reilly,99
+Hessel High School,11,Social Studies,Cultural anthropology,Stacy Reilly,72
+Hessel High School,11,Foreign Language,American Sign Language,Stacy Reilly,95
+Hessel High School,11,Business,Consumer education,Stacy Reilly,97
+Hessel High School,11,Visual Arts,Digital media,Stacy Reilly,70
+Hessel High School,11,Social Studies,Geography,Isaias Hammes,89
+Hessel High School,11,Arts,AP Music theory,Isaias Hammes,86
+Hessel High School,11,Performing Arts,Piano,Isaias Hammes,94
+Hessel High School,11,Arts,AP Studio art (drawing),Isaias Hammes,89
+Hessel High School,11,Physical Education,Lifeguard training,Isaias Hammes,84
+Hessel High School,11,English,Creative writing,Berniece Hickle,96
+Hessel High School,11,English,Humanities,Berniece Hickle,80
+Hessel High School,11,Math,Geometry,Berniece Hickle,93
+Hessel High School,11,Performing Arts,Marching band,Berniece Hickle,72
+Hessel High School,11,English,World literature,Berniece Hickle,90
+Hessel High School,12,History & Social Science,AP European history,Hipolito Jakubowski,82
+Hessel High School,12,Science,Electronics,Hipolito Jakubowski,87
+Hessel High School,12,Foreign Language,Chinese,Hipolito Jakubowski,0
+Hessel High School,12,Sciences,AP Environmental Science,Hipolito Jakubowski,85
+Hessel High School,12,Social Studies,European history,Hipolito Jakubowski,83
+Hessel High School,12,Foreign Language,Russian,Scottie Graham,76
+Hessel High School,12,Math,Math applications,Scottie Graham,84
+Hessel High School,12,English,Literary analysis,Scottie Graham,77
+Hessel High School,12,World Languages and Cultures,AP German Language and Culture,Scottie Graham,98
+Hessel High School,12,Foreign Language,Chinese,Scottie Graham,86
+Hessel High School,12,Computer Science/Information Technology,Computer programming,Damaris Harris,99
+Hessel High School,12,Visual Arts,Printmaking,Damaris Harris,98
+Hessel High School,12,Arts,AP Art history,Damaris Harris,78
+Hessel High School,12,History & Social Science,AP Human Geography,Damaris Harris,93
+Hessel High School,12,Math,Multivariable calculus,Damaris Harris,0
+Hessel High School,12,Social Studies,Human geography,Ofelia Hane,71
+Hessel High School,12,Foreign Language,Ancient Greek,Ofelia Hane,100
+Hessel High School,12,English,Literary analysis,Ofelia Hane,97
+Hessel High School,12,Arts,AP Studio art (drawing),Ofelia Hane,85
+Hessel High School,12,Sciences,AP Environmental Science,Ofelia Hane,95
+Hessel High School,12,Performing Arts,Drama,Adrienne Hagenes,91
+Hessel High School,12,Computer Science/Information Technology,Web programming,Adrienne Hagenes,84
+Hessel High School,12,Visual Arts,Jewelry design,Adrienne Hagenes,82
+Hessel High School,12,Science,Geology,Adrienne Hagenes,85
+Hessel High School,12,Computer Science/Information Technology,Typing,Adrienne Hagenes,89
+Hessel High School,12,History & Social Science,AP European history,Brett Rohan,80
+Hessel High School,12,Vocational Education,Robotics,Brett Rohan,98
+Hessel High School,12,World Languages and Cultures,AP Latin,Brett Rohan,91
+Hessel High School,12,Arts,AP Art history,Brett Rohan,96
+Hessel High School,12,Science,Oceanography,Brett Rohan,88
+Hessel High School,12,Arts,AP Studio art (3-D design),Arno Harris,0
+Hessel High School,12,Family and Consumer Science,Chemistry of foods,Arno Harris,79
+Hessel High School,12,Physical Education,Lifeguard training,Arno Harris,80
+Hessel High School,12,Science,Botany,Arno Harris,86
+Hessel High School,12,Arts,AP Music theory,Arno Harris,78
+Hessel High School,12,Physical Education,Yoga,Ariel Brekke,81
+Hessel High School,12,Social Studies,US history,Ariel Brekke,77
+Hessel High School,12,Social Studies,European history,Ariel Brekke,71
+Hessel High School,12,Math,Probability,Ariel Brekke,70
+Hessel High School,12,History & Social Science,AP Macroeconomics,Ariel Brekke,71
+Hessel High School,12,Family and Consumer Science,Nutrition,Alexander Mitchell,98
+Hessel High School,12,Vocational Education,Criminal justice,Alexander Mitchell,92
+Hessel High School,12,Science,Marine biology,Alexander Mitchell,91
+Hessel High School,12,World Languages and Cultures,AP French Language and Culture,Alexander Mitchell,83
+Hessel High School,12,Vocational Education,Cosmetology,Alexander Mitchell,89
+Hessel High School,12,World Languages and Cultures,AP Spanish Literature and Culture,Blaise Jacobson,90
+Hessel High School,12,World Languages and Cultures,AP Japanese Language and Culture,Blaise Jacobson,98
+Hessel High School,12,Science,Earth science,Blaise Jacobson,81
+Hessel High School,12,Computer Science/Information Technology,Video game development,Blaise Jacobson,98
+Hessel High School,12,Business,Marketing,Blaise Jacobson,72
+Hessel High School,12,Physical Education,Dance,Sebastian Farrell,84
+Hessel High School,12,Sciences,AP Physics 2 (Algebra-Based),Sebastian Farrell,92
+Hessel High School,12,History & Social Science,AP United States History,Sebastian Farrell,78
+Hessel High School,12,English,Popular literature,Sebastian Farrell,72
+Hessel High School,12,Business,Introduction to business,Sebastian Farrell,71
+Hessel High School,12,History & Social Science,Math & Computer Science,Mike Huel,90
+Hessel High School,12,History & Social Science,AP World History,Mike Huel,83
+Hessel High School,12,English,English literature and composition,Mike Huel,75
+Hessel High School,12,Vocational Education,Metalworking,Mike Huel,74
+Hessel High School,12,Visual Arts,Printmaking,Mike Huel,73
+Hessel High School,12,Vocational Education,Metalworking,Celine Boyer,80
+Hessel High School,12,Math,Calculus,Celine Boyer,96
+Hessel High School,12,World Languages and Cultures,AP Chinese Language and Culture,Celine Boyer,99
+Hessel High School,12,Vocational Education,FFA (Future Farmers of America),Celine Boyer,79
+Hessel High School,12,Foreign Language,Ancient Greek,Celine Boyer,0
+Hessel High School,12,World Languages and Cultures,AP Italian Language and Culture,Karlie Lebsack,73
+Hessel High School,12,World Languages and Cultures,AP Chinese Language and Culture,Karlie Lebsack,93
+Hessel High School,12,Business,Accounting,Karlie Lebsack,0
+Hessel High School,12,World Languages and Cultures,AP Spanish Language and Culture,Karlie Lebsack,84
+Hessel High School,12,Foreign Language,Italian,Karlie Lebsack,91
+Hessel High School,12,Business,Accounting,Noah O'Conner,80
+Hessel High School,12,English,Journalism,Noah O'Conner,79
+Hessel High School,12,History & Social Science,AP United States History,Noah O'Conner,70
+Hessel High School,12,Math,Integrated math,Noah O'Conner,85
+Hessel High School,12,Foreign Language,German,Noah O'Conner,95

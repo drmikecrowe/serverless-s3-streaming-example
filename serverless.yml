@@ -1,0 +1,36 @@
+service:
+  name: serverless-s3-streaming-example
+
+package:
+  individually: true
+
+plugins:
+  - serverless-webpack
+  - serverless-offline
+
+provider:
+  name: aws
+  runtime: nodejs10.x
+
+functions:
+  ProcessUpload:
+    handler: src/handler.default
+    events:
+      - s3:
+          bucket: ${self:custom.src_bucket}
+          event: s3:ObjectCreated:*
+          rules:
+            - prefix: ${self:provider.stage}/uploads
+          existing: true
+    environment:
+        DEST_BUCKET: ${self:custom.dest_bucket}
+        DEST_KEY: ${self:provider.stage}/processed
+
+custom:
+  region: ${env:REGION, 'us-east-1'}
+  src_bucket: ${self:service}
+  dest_bucket: ${self:service}     # NOTE: This could be another bucket/path if desired
+  webpack:
+    webpackConfig: 'webpack.config.js'
+    packager: 'yarn'
+    includeModules: true

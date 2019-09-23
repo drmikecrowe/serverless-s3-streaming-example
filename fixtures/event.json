@@ -1,0 +1,25 @@
+{
+    "Records": [
+        {
+            "eventVersion": "2.1",
+            "eventSource": "aws:s3",
+            "awsRegion": "us-east-1",
+            "eventTime": "2019-09-23T01:16:17.859Z",
+            "eventName": "ObjectCreated:Put",
+            "s3": {
+                "s3SchemaVersion": "1.0",
+                "configurationId": "serverless-s3-streaming-example-dev-ProcessUpload-2ed7c68906189b1d866621dcb2e8a0eb",
+                "bucket": {
+                    "name": "serverless-s3-streaming-example",
+                    "arn": "arn:aws:s3:::serverless-s3-streaming-example"
+                },
+                "object": {
+                    "key": "dev/uploads/master-data-small.csv",
+                    "size": 65213,
+                    "eTag": "0c8cce734114190b55090c6823fe926d",
+                    "sequencer": "005D881CE1A8D4C56F"
+                }
+            }
+        }
+    ]
+}
