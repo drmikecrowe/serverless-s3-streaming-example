@@ -7,8 +7,13 @@
         "node": "10.6.0"
     },
     "scripts": {
+        "build:test": "ts-node fixtures/create-fake-csv.ts",
+        "deploy": "serverless deploy",
+        "logs": "serverless logs -f ProcessUpload",
+        "test": "DEBUG=s3-stream:* DEST_BUCKET=xxx DEST_PREFIX=xxx ts-node test/handler.test.ts",
         "upload:small": "aws s3 cp fixtures/master-data-small.csv s3://${BUCKET}/dev/uploads/master-data-small.csv",
-        "test": "echo \"No tests yet...\""
+        "upload:medium": "aws s3 cp fixtures/master-data-medium.csv s3://${BUCKET}/dev/uploads/master-data-medium.csv",
+        "upload:large": "aws s3 cp fixtures/master-data-large.csv s3://${BUCKET}/dev/uploads/master-data-large.csv"
     },
     "repository": {
         "type": "git",
@@ -28,10 +33,14 @@
     },
     "license": "MIT",
     "dependencies": {
-        "csv": "^5.1.3",
+        "assert": "^2.0.0",
+        "aws-lambda": "^0.1.2",
+        "csv-parse": "^4.4.6",
+        "csv-stringify": "^5.3.3",
         "dalamb": "^0.2.0",
         "debug": "^4.1.1",
         "lodash": "^4.17.15",
+        "moment": "^2.24.0",
         "source-map-support": "^0.5.13"
     },
     "devDependencies": {
@@ -39,17 +48,20 @@
         "@babel/preset-env": "^7.5.5",
         "@babel/preset-typescript": "^7.3.3",
         "@types/faker": "^4.1.5",
-        "@types/lodash": "^4.14.138",
-        "@types/node": "^8.10.54",
-        "faker": "^4.1.0",
+        "@types/lodash": "^4.14.139",
+        "@types/moment": "^2.13.0",
+        "@types/node": "10",
+        "aws-sdk": "^2.533.0",
         "babel-loader": "^8.0.6",
         "cache-loader": "^4.1.0",
+        "faker": "^4.1.0",
         "fork-ts-checker-webpack-plugin": "^1.4.3",
-	"serverless": "^1.52.2",
-	"serverless-offline": "^5.11.0",
-	"serverless-webpack": "^5.3.1",
-        "typescript": "^3.5.3",
+        "mkdirp": "^0.5.1",
+        "serverless": "^1.52.2",
+        "serverless-offline": "^5.11.0",
+        "serverless-webpack": "^5.3.1",
         "tslint": "^5.20.0",
+        "typescript": "^3.5.3",
         "webpack": "^4.38.0",
         "webpack-node-externals": "^1.7.2"
     }
