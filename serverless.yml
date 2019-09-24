@@ -11,6 +11,25 @@ plugins:
 provider:
   name: aws
   runtime: nodejs10.x
+  stage: ${opt:stage, 'dev'}
+  profile: ${env:AWS_PROFILE, 'default'}
+  region: ${self:custom.region}
+  environment:
+    BUCKET: ${self:custom.src_bucket}
+    REGION: ${self:custom.region}
+  iamRoleStatements:
+    - Effect: "Allow"
+      Action:
+        - "s3:ListBucket"
+        - "s3:GetObject"
+        - "s3:DeleteObject"
+      Resource: "arn:aws:s3:::${self:custom.src_bucket}/${opt:stage, self:provider.stage}/uploads/*"
+    - Effect: "Allow"
+      Action:
+        - "s3:ListBucket"
+        - "s3:DeleteObject"
+        - "s3:PutObject"
+      Resource: "arn:aws:s3:::${self:custom.dest_bucket}/${opt:stage, self:provider.stage}/processed/*"
 
 functions:
   ProcessUpload:
@@ -20,11 +39,12 @@ functions:
           bucket: ${self:custom.src_bucket}
           event: s3:ObjectCreated:*
           rules:
-            - prefix: ${self:provider.stage}/uploads
+            - prefix: ${opt:stage, self:provider.stage}/uploads
           existing: true
     environment:
         DEST_BUCKET: ${self:custom.dest_bucket}
-        DEST_KEY: ${self:provider.stage}/processed
+        DEST_PREFIX: ${opt:stage, self:provider.stage}/processed
+        DEBUG: ${self:custom.logging.${opt:stage, self:provider.stage}_debug}
 
 custom:
   region: ${env:REGION, 'us-east-1'}
@@ -34,3 +54,6 @@ custom:
     webpackConfig: 'webpack.config.js'
     packager: 'yarn'
     includeModules: true
+  logging:
+    dev_debug: "s3-stream:*"
+    prod_debug: ""
