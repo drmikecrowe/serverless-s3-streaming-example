@@ -1,10 +1,11 @@
 /**
- * This file provides a test harness for testing locally.  
+ * This file provides a test harness for testing locally.
  * It sets up fileHandler with a local stream interface instead of S3
  */
 
 import { FileHandler, IFileHandler } from "../src/lib/FileHandler";
 import { getReadStream, getWriteStream } from "./lib/StreamUtils.local";
+import { compareAllFiles } from "./fileValidators";
 
 const debug = require("debug")("FileHandler:test");
 
@@ -22,6 +23,7 @@ const fileHandler: FileHandler = new FileHandler(fileHandlerSetup);
 fileHandler
     .Process()
     .then(() => debug("Processing Complete!"))
+    .then(() => compareAllFiles(filename, "/tmp/output"))
     .catch(err => console.error(err));
 
 process.on("uncaughtException", function(err) {

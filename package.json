@@ -56,6 +56,7 @@
         "cache-loader": "^4.1.0",
         "faker": "^4.1.0",
         "fork-ts-checker-webpack-plugin": "^1.4.3",
+        "globby": "^10.0.1",
         "mkdirp": "^0.5.1",
         "serverless": "^1.52.2",
         "serverless-offline": "^5.11.0",
