@@ -11,8 +11,7 @@
         "moduleResolution": "node",
         "esModuleInterop": true,
         "lib": ["es2017"],
-        "rootDir": "./src",
         "resolveJsonModule": true
     },
-    "exclude": ["node_modules", "fixtures/*.ts", "**/*.spec.ts"]
+    "exclude": ["node_modules"]
 }
