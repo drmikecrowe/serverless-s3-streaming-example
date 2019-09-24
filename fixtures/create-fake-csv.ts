@@ -6,8 +6,9 @@
 
 import * as fs from "fs";
 import * as faker from "faker";
-import * as csv from "csv";
+import stringify from 'csv-stringify';
 import * as _ from "lodash";
+import moment from "moment";
 
 const debug = require("debug")("create-fake-csv");
 
@@ -52,15 +53,15 @@ for (let i = 0; i < sizes.length; i++) {
     const size = sizes[i];
 
     // First, build the CSV output stream
-    const headers = ["School", "Student Grade", "Subject", "Class", "Student Name", "Grade"];
-    const stringify = csv.stringify({
+    const headers = ["School", "Semester", "Grade", "Subject", "Class", "Student Name", "Score"];
+    const csvStream = stringify({
         header: true,
         columns: headers,
     });
     // Create the output stream
     const outStream = fs.createWriteStream(`fixtures/master-data-${size.name}.csv`, { encoding: "utf8" });
     // Pipe the CSV into the output stream
-    stringify.pipe(outStream);
+    csvStream.pipe(outStream);
 
     // Define how big we will make the data
     const MAX_SCHOOLS = size.schoolCount;
@@ -85,17 +86,20 @@ for (let i = 0; i < sizes.length; i++) {
                     const description = `${classSubject}/${className}`;
                     if (classNames.indexOf(description) === -1) {
                         classNames.push(description);
+                        // Semester is either Spring or Fall of current year
+                        const semester = parseInt(moment().format("M")) > 6 ? `Fall-${moment().format("YYYY")}`: `Spring-${moment().format("YYYY")}`;
+
                         // Assign them a random grade
                         const grade = _.random(0, 100) < FAILURE_RATE ? 0 : _.random(70, 100);
 
                         // Save it to the CSV file
-                        const row = [schoolName, studentGrade, classSubject, className, studentName, grade];
-                        stringify.write(row);
+                        const row = [schoolName, semester, `${studentGrade}th-Grade`, classSubject, className, studentName, grade];
+                        csvStream.write(row);
                         debug(row.join(","));
                     }
                 }
             }
         }
     }
-    stringify.end();
+    csvStream.end();
 }
