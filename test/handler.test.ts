@@ -52,7 +52,7 @@ FileHandler.prototype.getWriteStream = (outputStream: Writable, uniqueIdentifier
     });
 
     const outputFile: IOutputFile = {
-        outputStream,
+        passThruStream: outputStream,
         pFinished,
     };
     return outputFile;

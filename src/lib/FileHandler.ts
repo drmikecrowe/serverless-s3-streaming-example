@@ -9,7 +9,7 @@ import { S3 } from "aws-sdk";
 const s3 = new S3();
 
 export interface IOutputFile {
-    outputStream: Writable;
+    passThruStream: Writable;
     pFinished: Promise<any>;
 }
 
@@ -102,7 +102,7 @@ export class FileHandler {
             this.parser.on("error", err => reject(err));
             this.parser.on("readable", () => this.newLineAvailable());
             this.parser.on("end", () => {
-                Object.keys(this.outputStreams).map(outputFile => this.outputStreams[outputFile].outputStream.end());
+                Object.keys(this.outputStreams).map(outputFile => this.outputStreams[outputFile].passThruStream.end());
                 resolve();
             });
             this.readStream.pipe(this.parser);
@@ -142,7 +142,7 @@ export class FileHandler {
         });
 
         const outputFile: IOutputFile = {
-            outputStream,
+            passThruStream: outputStream,
             pFinished,
         };
         return outputFile;
@@ -227,7 +227,7 @@ export class FileHandler {
                 });
                 this.outputStreams[uniqueIdentifier] = this.getWriteStream(csvStream, uniqueIdentifier, this.deletePromises[selector]);
             }
-            this.outputStreams[uniqueIdentifier].outputStream.write(record);
+            this.outputStreams[uniqueIdentifier].passThruStream.write(record);
         }
     }
 }
