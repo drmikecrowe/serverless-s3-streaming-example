@@ -8,13 +8,19 @@
     },
     "scripts": {
         "build:test": "ts-node fixtures/create-fake-csv.ts",
-        "deploy": "serverless deploy",
-        "logs": "serverless logs -f ProcessUpload",
+        "deploy:dev": "serverless deploy",
+        "deploy:prod": "serverless deploy --stage prod",
+        "logs:dev": "serverless logs -f ProcessUpload",
+        "logs:prod": "serverless logs -f ProcessUpload --stage prod",
         "test": "DEBUG=s3-stream:* DEST_BUCKET=xxx DEST_PREFIX=xxx ts-node test/handler.test.ts",
-        "upload:tiny": "aws s3 cp fixtures/master-data-tiny.csv s3://${BUCKET}/dev/uploads/master-data-tiny.csv",
-        "upload:small": "aws s3 cp fixtures/master-data-small.csv s3://${BUCKET}/dev/uploads/master-data-small.csv",
-        "upload:medium": "aws s3 cp fixtures/master-data-medium.csv s3://${BUCKET}/dev/uploads/master-data-medium.csv",
-        "upload:large": "aws s3 cp fixtures/master-data-large.csv s3://${BUCKET}/dev/uploads/master-data-large.csv"
+        "upload:tiny:dev": "aws s3 cp fixtures/master-data-tiny.csv s3://${BUCKET}/dev/uploads/master-data-tiny.csv",
+        "upload:small:dev": "aws s3 cp fixtures/master-data-small.csv s3://${BUCKET}/dev/uploads/master-data-small.csv",
+        "upload:medium:dev": "aws s3 cp fixtures/master-data-medium.csv s3://${BUCKET}/dev/uploads/master-data-medium.csv",
+        "upload:large:dev": "aws s3 cp fixtures/master-data-large.csv s3://${BUCKET}/dev/uploads/master-data-large.csv",
+        "upload:tiny:prod": "aws s3 cp fixtures/master-data-tiny.csv s3://${BUCKET}/prod/uploads/master-data-tiny.csv",
+        "upload:small:prod": "aws s3 cp fixtures/master-data-small.csv s3://${BUCKET}/prod/uploads/master-data-small.csv",
+        "upload:medium:prod": "aws s3 cp fixtures/master-data-medium.csv s3://${BUCKET}/prod/uploads/master-data-medium.csv",
+        "upload:large:prod": "aws s3 cp fixtures/master-data-large.csv s3://${BUCKET}/prod/uploads/master-data-large.csv"
     },
     "repository": {
         "type": "git",

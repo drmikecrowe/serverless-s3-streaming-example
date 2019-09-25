@@ -38,6 +38,8 @@ provider:
 functions:
   ProcessUpload:
     handler: src/handler.default
+    # Adjust this timeout based on your file size
+    timeout: 60                   
     events:
       - s3:
           bucket: ${self:custom.src_bucket}
