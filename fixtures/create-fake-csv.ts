@@ -13,7 +13,6 @@ import moment from "moment";
 const debug = require("debug")("create-fake-csv");
 
 const FAILURE_RATE = 3; // 3% of the students fail
-const CLASSES_PER_DAY = 5; // Students are in 5 classes per day
 
 // Random class names sucked somewhere from the interwebs
 const masterClasses = require("./classes.json");
@@ -26,12 +25,14 @@ interface ISize {
     name: string;
     studentCount: number;
     schoolCount: number;
+    classCount: number;
 }
 
 const sizes: ISize[] = [
-    { name: "small", studentCount: 15, schoolCount: 3 },
-    { name: "medium", studentCount: 22, schoolCount: 10 },
-    { name: "large", studentCount: 30, schoolCount: 50 },
+    { name: "tiny", studentCount: 1, schoolCount: 1, classCount: 1 },
+    { name: "small", studentCount: 15, schoolCount: 3, classCount: 5 },
+    { name: "medium", studentCount: 22, schoolCount: 10, classCount: 5 },
+    { name: "large", studentCount: 30, schoolCount: 50, classCount: 5 },
 ];
 
 /**
@@ -66,6 +67,7 @@ for (let i = 0; i < sizes.length; i++) {
     // Define how big we will make the data
     const MAX_SCHOOLS = size.schoolCount;
     const MAX_STUDENTS_PER_GRADE = size.studentCount;
+    const CLASSES_PER_DAY = size.classCount; 
 
     // Now, build the data for each school
     for (let i1 = 0; i1 < MAX_SCHOOLS; i1++) {
