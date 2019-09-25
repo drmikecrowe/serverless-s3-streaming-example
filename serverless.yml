@@ -21,6 +21,10 @@ provider:
     - Effect: "Allow"
       Action:
         - "s3:ListBucket"
+      Resource: "arn:aws:s3:::${self:custom.src_bucket}"
+    - Effect: "Allow"
+      Action:
+        - "s3:ListBucket"
         - "s3:GetObject"
         - "s3:DeleteObject"
       Resource: "arn:aws:s3:::${self:custom.src_bucket}/${opt:stage, self:provider.stage}/uploads/*"
@@ -44,6 +48,7 @@ functions:
     environment:
         DEST_BUCKET: ${self:custom.dest_bucket}
         DEST_PREFIX: ${opt:stage, self:provider.stage}/processed
+        STAGE: ${opt:stage, self:provider.stage}
         DEBUG: ${self:custom.logging.${opt:stage, self:provider.stage}_debug}
 
 custom:
