@@ -17,6 +17,8 @@ export class FileHandler {
     // S3 Source Details
     srcBucket: string;
     srcKey: string;
+    destBucket: string;
+    destPrefix: string;
 
     // Streams
     private readStream: Readable;
@@ -35,8 +37,12 @@ export class FileHandler {
     private log: LambdaLog;
 
     constructor(srcBucket: string, srcKey: string, log: LambdaLog) {
+        assert.ok(process.env.DEST_BUCKET, `DEST_BUCKET not in the environment`);
+        assert.ok(process.env.DEST_PREFIX, `DEST_PREFIX not in the environment`);
         this.srcBucket = srcBucket;
         this.srcKey = srcKey;
+        this.destBucket = process.env.DEST_BUCKET as string;
+        this.destPrefix = process.env.DEST_PREFIX as string;
         this.log = log;
         this.deletePromises = {};
         this.outputStreams = {};
@@ -78,14 +84,6 @@ export class FileHandler {
     }
 
     /**
-     * Create the input stream from S3
-     */
-    getReadStream(srcBucket: string, srcKey: string): Readable {
-        const params: S3.GetObjectRequest = { Bucket: srcBucket, Key: srcKey };
-        return s3.getObject(params).createReadStream();
-    }
-
-    /**
      * Open the S3 object for streaming and pipes to CSV parser.
      * Resolves when CSV parser completes processing
      */
@@ -110,49 +108,39 @@ export class FileHandler {
     }
 
     /**
-     * Create the output stream in S3
-     * @param headers: string[] The CSV yeahder
-     * @param uniqueIdentifier string The output file path
+     * Create the input stream from S3
      */
-    getWriteStream(passThruStream: Writable, uniqueIdentifier: string, pDeleted: Promise<any>): IOutputFile {
-        // This promise both waits on delete to finish, then starts the output stream
-
-        assert.ok(process.env.DEST_BUCKET, `DEST_BUCKET not in the environment`);
-        assert.ok(process.env.DEST_PREFIX, `DEST_PREFIX not in the environment`);
-        const pFinished = new Promise(resolve => {
-            pDeleted
-                .then(() => {
-                    const destBucket = process.env.DEST_BUCKET as string;
-                    const destPrefix = process.env.DEST_PREFIX as string;
-                    const outputPath = `${destPrefix}/${uniqueIdentifier}`;
-                    this.log.debug(`Copying ${destBucket}/${outputPath}`);
-                    const params: S3.PutObjectRequest = { Bucket: destBucket, Key: outputPath, Body: passThruStream };
-                    s3.upload(params)
-                        .promise()
-                        .then(() => {
-                            resolve();
-                        })
-                        .catch(err => this.rethrowError(`getWriteStream/s3`, err));
-                })
-                .catch(err => this.rethrowError(`getWriteStream/pDeleted`, err));
-        });
-
-        const outputFile: IOutputFile = {
-            passThruStream,
-            pFinished,
-        };
-        return outputFile;
+    getReadStream(srcBucket: string, srcKey: string): Readable {
+        const params: S3.GetObjectRequest = { Bucket: srcBucket, Key: srcKey };
+        return s3.getObject(params).createReadStream();
     }
 
     /**
+     * getWriteStream pipes a stream to S3
+     * @param outputFileName string The output key/filename to write in S3
+     * @param passThruStream Writable The source stream for the output file
+     */
+    getWriteStream(outputFileName: string, passThruStream: Writable): Promise<any> {
+        return new Promise((resolve, reject) => {
+            const outputPath = `${this.destPrefix}/${outputFileName}`;
+            this.log.debug(`Copying ${this.destBucket}/${outputPath}`);
+            const params: S3.PutObjectRequest = { Bucket: this.destBucket, Key: outputPath, Body: passThruStream };
+            s3.upload(params)
+                .promise()
+                .then(() => resolve())
+                .catch(err => this.rethrowError(`getWriteStream/s3`, err));
+        });
+    }
+     
+    /**
      *
-     * @param prefix string The prefix to delete
+     * @param cleanPrefix string The prefix to delete
      */
 
-    deleteOldFiles(prefix: string): Promise<any> {
+    deleteOldFiles(cleanPrefix: string): Promise<any> {
         const destBucket = process.env.DEST_BUCKET as string;
         const destPrefix = process.env.DEST_PREFIX as string;
-        const outputPath = `${destPrefix}/${prefix}/`;
+        const outputPath = `${destPrefix}/${cleanPrefix}/`;
         this.log.info(`Removing s3://${destBucket}/${outputPath}`);
 
         let currentData: S3.ListObjectsV2Output;
@@ -185,13 +173,13 @@ export class FileHandler {
             .then((res: S3.DeleteObjectsOutput) => {
                 this.log.info(`Removed ${(currentData.Contents as any).length}, result: `, res);
                 if (currentData.IsTruncated) {
-                    return this.deleteOldFiles(prefix);
+                    return this.deleteOldFiles(cleanPrefix);
                 }
                 return true;
             })
             .catch(err => {
                 this.log.error(err);
-                return Promise.resolve();       // Don't let this be a fatal error
+                return Promise.resolve(); // Don't let this be a fatal error
             });
     }
 
@@ -206,24 +194,35 @@ export class FileHandler {
             if (!record || headers.length === 0) continue;
 
             // This is very demo-specific.  It separates our sample data into separate files by class
-            const uniqueIdentifier = `${record["Semester"]}/${record["School"]}/${record["Grade"]}/${record["Subject"]}-${record["Class"]}.csv`;
+            const outputFileName = `${record["Semester"]}/${record["School"]}/${record["Grade"]}/${record["Subject"]}-${record["Class"]}.csv`;
 
-            if (!this.outputStreams[uniqueIdentifier]) {
+            if (!this.outputStreams[outputFileName]) {
                 // Here, we're defining the prefix that new files replace.  In this demo, I'm basically saying that any file with
                 // Fall-2019 records are replacing that entire directory.  This is application specific -- other conditions may just replace the School,
                 // or the Grade
-                const selector = `${record["Semester"]}`;
-                if (!this.deletePromises[selector]) {
-                    this.deletePromises[selector] = this.deleteOldFiles(selector);
+                const topLevelFolder = `${record["Semester"]}`;
+                if (!this.deletePromises[topLevelFolder]) {
+                    this.deletePromises[topLevelFolder] = this.deleteOldFiles(topLevelFolder);
                 }
 
-                const csvStream = stringify({
+                const passThruStream = stringify({
                     header: true,
                     columns: headers,
                 });
-                this.outputStreams[uniqueIdentifier] = this.getWriteStream(csvStream, uniqueIdentifier, this.deletePromises[selector]);
+
+                const pFinished = new Promise(resolve => {
+                    this.deletePromises[topLevelFolder]
+                        .then(() => this.getWriteStream(outputFileName, passThruStream))
+                        .catch(err => this.rethrowError(`newLineAvailable/pFinished`, err));
+                });
+
+                const outputFile: IOutputFile = {
+                    passThruStream,
+                    pFinished,
+                };
+                this.outputStreams[outputFileName] = outputFile;
             }
-            this.outputStreams[uniqueIdentifier].passThruStream.write(record);
+            this.outputStreams[outputFileName].passThruStream.write(record);
         }
     }
 }

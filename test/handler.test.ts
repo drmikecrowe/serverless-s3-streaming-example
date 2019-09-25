@@ -28,34 +28,22 @@ FileHandler.prototype.getReadStream = (srcBucket: string, srcKey: string): Reada
  * @param headers: string[] The CSV yeahder
  * @param uniqueIdentifier string The output file path
  */
-FileHandler.prototype.getWriteStream = (outputStream: Writable, uniqueIdentifier: string, pDeleted: Promise<any>): IOutputFile => {
+FileHandler.prototype.getWriteStream = (outputFileName: string, passThruStream: Writable): Promise<any> => {
     // Create a PassThru stream to allow data to flow while deleting
-    const bufferStream = new PassThrough();
-    outputStream.pipe(bufferStream);
-
-    // This promise both waits on delete to finish, then starts the output stream
-    const pFinished = new Promise(resolve => {
-        pDeleted.then(() => {
-            // AWS S3.upload pipes stream to bucket file.  Here, we setup a new stream and pipe manually
-            const outDir = path.join("/tmp/output", path.dirname(uniqueIdentifier));
-            const outputPath = path.join("/tmp/output", uniqueIdentifier);
-            mkdirp.sync(outDir);
-        
-            log.info(`Removing finished, opening new file ${outputPath}`);
-            const fileStream = fs.createWriteStream(outputPath, { encoding: "utf8" });
-            bufferStream.pipe(fileStream);
-            fileStream.on("close", () => {
-                log.info(`Output ${outputPath} finished writing`);
-                resolve();
-            });
+    return new Promise(resolve => {
+        // AWS S3.upload pipes stream to bucket file.  Here, we setup a new stream and pipe manually
+        const outDir = path.join("/tmp/output", path.dirname(outputFileName));
+        const outputPath = path.join("/tmp/output", outputFileName);
+        mkdirp.sync(outDir);
+    
+        log.info(`Removing finished, opening new file ${outputPath}`);
+        const fileStream = fs.createWriteStream(outputPath, { encoding: "utf8" });
+        passThruStream.pipe(fileStream);
+        fileStream.on("close", () => {
+            log.info(`Output ${outputPath} finished writing`);
+            resolve();
         });
     });
-
-    const outputFile: IOutputFile = {
-        passThruStream: outputStream,
-        pFinished,
-    };
-    return outputFile;
 };
 
 FileHandler.prototype.deleteOldFiles = (cleanPrefix: string): Promise<any> => {
