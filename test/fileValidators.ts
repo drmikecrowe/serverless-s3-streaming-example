@@ -28,6 +28,7 @@ export const compareAllFiles = async (filename: string, dirname: string) => {
         duplicates: 0,
         new_lines: 0,
         missing_lines: 0,
+        same_lines: 0
     };
     const outputFiles: string[] = await globby(dirname, opts);
     while (outputFiles.length) {
@@ -45,6 +46,7 @@ export const compareAllFiles = async (filename: string, dirname: string) => {
                     errors.new_lines++;
                 } else {
                     srcLines[line] = true;
+                    errors.same_lines++;
                 }
             }
         }
