@@ -114,11 +114,7 @@ export class FileHandler {
      * @param headers: string[] The CSV yeahder
      * @param uniqueIdentifier string The output file path
      */
-    getWriteStream(outputStream: Writable, uniqueIdentifier: string, pDeleted: Promise<any>): IOutputFile {
-        // Create a PassThru stream to allow data to flow while deleting
-        const bufferStream = new PassThrough();
-        outputStream.pipe(bufferStream);
-
+    getWriteStream(passThruStream: Writable, uniqueIdentifier: string, pDeleted: Promise<any>): IOutputFile {
         // This promise both waits on delete to finish, then starts the output stream
 
         assert.ok(process.env.DEST_BUCKET, `DEST_BUCKET not in the environment`);
@@ -130,7 +126,7 @@ export class FileHandler {
                     const destPrefix = process.env.DEST_PREFIX as string;
                     const outputPath = `${destPrefix}/${uniqueIdentifier}`;
                     this.log.debug(`Copying ${destBucket}/${outputPath}`);
-                    const params: S3.PutObjectRequest = { Bucket: destBucket, Key: outputPath, Body: bufferStream };
+                    const params: S3.PutObjectRequest = { Bucket: destBucket, Key: outputPath, Body: passThruStream };
                     s3.upload(params)
                         .promise()
                         .then(() => {
@@ -142,7 +138,7 @@ export class FileHandler {
         });
 
         const outputFile: IOutputFile = {
-            passThruStream: outputStream,
+            passThruStream,
             pFinished,
         };
         return outputFile;
