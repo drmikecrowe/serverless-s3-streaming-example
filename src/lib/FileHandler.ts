@@ -57,30 +57,19 @@ export class FileHandler {
     /**
      * Fires when entire process has completed for the file
      */
-    Process(): Promise<any> {
-        return Promise.resolve(this.log.debug(`Starting to process`))
-            .then(() => Promise.resolve(this.openReadStream()))
-            .then(() => Promise.resolve(this.log.info(`Starting waiting for promises to finish`)))
-            .then(() => this.waitForAll())
-            .then(() => Promise.resolve(this.log.info(`All Promises Complete`)))
-            .catch(err => this.rethrowError("Process", err));
-    }
-
-    /**
-     * Wait for all promises to finish
-     */
-    waitForAll(): Promise<any> {
+    async Process(): Promise<any> {
+        this.log.debug(`Starting to process`);
+        this.openReadStream();
+        this.log.info(`Starting waiting for promises to finish`);
         // Wait for the CSV parse to be complete before building list of all promises to resolve
-        return this.pAllRecordsRead
-            .then(() => {
-                this.log.info(`Streaming complete, waiting on uploads to finish`);
-                const promises: Promise<any>[] = [];
-                for (let group of Object.keys(this.outputStreams)) {
-                    promises.push(this.outputStreams[group].pFinished);
-                }
-                return Promise.all(promises);
-            })
-            .catch(err => this.rethrowError(`getWriteStream`, err));
+        await this.pAllRecordsRead;
+        this.log.info(`Streaming complete, waiting on uploads to finish`);
+        const promises: Promise<any>[] = [];
+        for (let group of Object.keys(this.outputStreams)) {
+            promises.push(this.outputStreams[group].pFinished);
+        }
+        await Promise.all(promises);
+        this.log.info(`All Promises Complete`);
     }
 
     /**
@@ -131,56 +120,53 @@ export class FileHandler {
                 .catch(err => this.rethrowError(`getWriteStream/s3`, err));
         });
     }
-     
+
     /**
      *
      * @param cleanPrefix string The prefix to delete
      */
 
-    deleteOldFiles(cleanPrefix: string): Promise<any> {
+    async deleteOldFiles(cleanPrefix: string): Promise<any> {
         const destBucket = process.env.DEST_BUCKET as string;
         const destPrefix = process.env.DEST_PREFIX as string;
         const outputPath = `${destPrefix}/${cleanPrefix}/`;
         this.log.info(`Removing s3://${destBucket}/${outputPath}`);
 
-        let currentData: S3.ListObjectsV2Output;
         let params: S3.ListObjectsV2Request = {
             Bucket: destBucket,
             Prefix: outputPath,
         };
 
-        return s3
-            .listObjects(params)
-            .promise()
-            .then((data: S3.ListObjectsV2Output) => {
-                currentData = data;
-                if (!currentData.Contents || currentData.Contents.length === 0) throw new Error("List of objects empty.");
+        let currentData: S3.ListObjectsV2Output;
 
-                const deleteParams: S3.DeleteObjectsRequest = {
-                    Bucket: destBucket,
-                    Delete: { Objects: [] },
-                };
+        try {
+            currentData = await s3.listObjects(params).promise();
+        } catch (err) {
+            this.log.info(`No objects found to delete`);
+            return;
+        }
 
-                currentData.Contents.forEach(content => {
-                    if (content.Key) {
-                        this.log.debug(`Removing ${content.Key}`);
-                        deleteParams.Delete.Objects.push({ Key: content.Key });
-                    }
-                });
+        if (!currentData.Contents || currentData.Contents.length === 0) return;
 
-                return s3.deleteObjects(deleteParams).promise();
-            })
-            .then((res: S3.DeleteObjectsOutput) => {
-                this.log.info(`Removed ${(currentData.Contents as any).length}, result: `, res);
-                if (currentData.IsTruncated) {
-                    return this.deleteOldFiles(cleanPrefix);
-                }
-                return true;
-            })
-            .catch(err => {
-                this.log.error(err);
-                return Promise.resolve(); // Don't let this be a fatal error
-            });
+        const deleteParams: S3.DeleteObjectsRequest = {
+            Bucket: destBucket,
+            Delete: { Objects: [] },
+        };
+
+        currentData.Contents.forEach(content => {
+            if (content.Key) {
+                this.log.debug(`Removing ${content.Key}`);
+                deleteParams.Delete.Objects.push({ Key: content.Key });
+            }
+        });
+
+        const res: S3.DeleteObjectsOutput = await s3.deleteObjects(deleteParams).promise();
+
+        this.log.info(`Removed ${(currentData.Contents as any).length}, result: `, res);
+        if (currentData.IsTruncated) {
+            await this.deleteOldFiles(cleanPrefix);
+        }
+        return true;
     }
 
     /**
