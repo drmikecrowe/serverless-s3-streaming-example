@@ -84,13 +84,15 @@ export class FileHandler {
             bom: true,
         });
         this.readStream = this.getReadStream(this.srcBucket, this.srcKey);
+        this.readStream.on("error", err => this.parser.end());
+        this.readStream.on("end", () => this.readStream.unpipe(this.parser));
         return new Promise((resolve, reject) => {
-            this.readStream.on("error", err => reject(err));
-            this.parser.on("error", err => reject(err));
             this.parser.on("readable", () => this.newLineAvailable());
-            this.parser.on("end", () => {
-                Object.keys(this.outputStreams).map(outputFile => this.outputStreams[outputFile].passThruStream.end());
-                resolve();
+            this.parser.on("unpipe", () => this.parser.end());
+            this.parser.on("end", () => resolve());
+            this.parser.on("error", err => err => {
+                this.parser.end();
+                reject(err);
             });
             this.readStream.pipe(this.parser);
         });
@@ -195,12 +197,16 @@ export class FileHandler {
                     header: true,
                     columns: headers,
                 });
+                this.parser.on("end", () => passThruStream.end());      // End this passThruStream when the reader completes
 
                 const pFinished = new Promise((resolve, reject) => {
-                    this.deletePromises[topLevelFolder]
-                        .then(() => this.getWriteStream(outputFileName, passThruStream))
-                        .then(() => resolve())
-                        .catch(err => reject(err));
+                    (async () => {
+                        await this.deletePromises[topLevelFolder];
+                        await this.getWriteStream(outputFileName, passThruStream);
+                        resolve();
+                    })().catch((err) => {
+                        reject(err);
+                    });
                 });
 
                 const outputFile: IOutputFile = {

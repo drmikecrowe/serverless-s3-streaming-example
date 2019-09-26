@@ -36,9 +36,9 @@ FileHandler.prototype.getWriteStream = (outputFileName: string, passThruStream: 
         const outputPath = path.join("/tmp/output", outputFileName);
         mkdirp.sync(outDir);
     
-        log.info(`Removing finished, opening new file ${outputPath}`);
         const fileStream = fs.createWriteStream(outputPath, { encoding: "utf8" });
         passThruStream.pipe(fileStream);
+        // this.parser.on("end", () => passThruStream.end());      // End this passThruStream when the reader completes
         fileStream.on("close", () => {
             log.info(`Output ${outputPath} finished writing`);
             resolve();
