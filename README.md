@@ -14,9 +14,7 @@ This repo illustrates how to stream a large file from S3 and split it into separ
 * We can't start writing to S3 **until** all the old files are deleted.
 * We don't know how many output files will be created, so we must wait until the input file has finished processing before starting to waiting for the outputs to finish
 
-## Demo Repository
-
-To [simulate this scenario](https://github.com/drmikecrowe/serverless-s3-streaming-example), I contrived the following:
+## Demonstration Problem Statement
 
 * A school district central computer uploads all the grades for the district for a semester
 * The data file is has the following headers: 
@@ -24,7 +22,7 @@ To [simulate this scenario](https://github.com/drmikecrowe/serverless-s3-streami
 * Process the uploaded file, splitting it into the following structure:
     * Semester/School/Grade
     * Create a file called Subject-Class.csv with all the grades for that class
-* For this simulation, the central computer can update an entire Semester by uploading a new file.  This could be set differently based on the application:  For instance, if the central computer could upload the grades for a specific Semester + School, then we could update [this line](https://github.com/drmikecrowe/serverless-s3-streaming-example/blob/master/src/lib/FileHandler.ts#L189) with the revised criteria to only clear that block of data
+* For this simulation, the central computer can update an entire Semester by uploading a new file.  This could be set differently based on the application:  For instance, if the central computer could upload the grades for a specific Semester + School, then we could update [this line](https://github.com/drmikecrowe/serverless-s3-streaming-example/blob/master/src/lib/FileHandler.ts#L191) with the revised criteria to only clear that block of data
 
 Here's the general outline of the demo program flow:
 
