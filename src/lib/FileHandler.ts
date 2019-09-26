@@ -59,7 +59,7 @@ export class FileHandler {
      */
     async Process(): Promise<any> {
         this.log.debug(`Starting to process`);
-        this.openReadStream();
+        this.pAllRecordsRead = this.openReadStream();
         this.log.info(`Starting waiting for promises to finish`);
         // Wait for the CSV parse to be complete before building list of all promises to resolve
         await this.pAllRecordsRead;
@@ -76,7 +76,7 @@ export class FileHandler {
      * Open the S3 object for streaming and pipes to CSV parser.
      * Resolves when CSV parser completes processing
      */
-    openReadStream() {
+    openReadStream(): Promise<any> {
         this.parser = new Parser({
             delimiter: ",",
             columns: true,
@@ -84,7 +84,7 @@ export class FileHandler {
             bom: true,
         });
         this.readStream = this.getReadStream(this.srcBucket, this.srcKey);
-        this.pAllRecordsRead = new Promise((resolve, reject) => {
+        return new Promise((resolve, reject) => {
             this.readStream.on("error", err => reject(err));
             this.parser.on("error", err => reject(err));
             this.parser.on("readable", () => this.newLineAvailable());
