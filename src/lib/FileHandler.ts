@@ -117,7 +117,7 @@ export class FileHandler {
             s3.upload(params)
                 .promise()
                 .then(() => resolve())
-                .catch(err => this.rethrowError(`getWriteStream/s3`, err));
+                .catch(err => reject(err));
         });
     }
 
@@ -196,10 +196,11 @@ export class FileHandler {
                     columns: headers,
                 });
 
-                const pFinished = new Promise(resolve => {
+                const pFinished = new Promise((resolve, reject) => {
                     this.deletePromises[topLevelFolder]
                         .then(() => this.getWriteStream(outputFileName, passThruStream))
-                        .catch(err => this.rethrowError(`newLineAvailable/pFinished`, err));
+                        .then(() => resolve())
+                        .catch(err => reject(err));
                 });
 
                 const outputFile: IOutputFile = {
