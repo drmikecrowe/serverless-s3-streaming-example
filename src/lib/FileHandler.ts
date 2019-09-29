@@ -111,16 +111,11 @@ export class FileHandler {
      * @param outputFileName string The output key/filename to write in S3
      * @param passThruStream Writable The source stream for the output file
      */
-    getWriteStream(outputFileName: string, passThruStream: Writable): Promise<any> {
-        return new Promise((resolve, reject) => {
-            const outputPath = `${this.destPrefix}/${outputFileName}`;
-            this.log.debug(`Copying ${this.destBucket}/${outputPath}`);
-            const params: S3.PutObjectRequest = { Bucket: this.destBucket, Key: outputPath, Body: passThruStream };
-            s3.upload(params)
-                .promise()
-                .then(() => resolve())
-                .catch(err => reject(err));
-        });
+    async getWriteStream(outputFileName: string, passThruStream: Writable): Promise<any> {
+        const outputPath = `${this.destPrefix}/${outputFileName}`;
+        this.log.debug(`Copying ${this.destBucket}/${outputPath}`);
+        const params: S3.PutObjectRequest = { Bucket: this.destBucket, Key: outputPath, Body: passThruStream };
+        await s3.upload(params).promise();
     }
 
     /**
