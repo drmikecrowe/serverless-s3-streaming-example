@@ -4,7 +4,7 @@
     "description": "Serverless Project Streaming and Parsing S3 files",
     "main": "handler.js",
     "engines": {
-        "node": "10.6.0"
+        "node": "10"
     },
     "scripts": {
         "build:test": "ts-node fixtures/create-fake-csv.ts",
