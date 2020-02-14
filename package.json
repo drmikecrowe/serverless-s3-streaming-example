@@ -41,7 +41,7 @@
     "license": "MIT",
     "dependencies": {
         "assert": "^2.0.0",
-        "aws-lambda": "^0.1.2",
+        "aws-lambda": "^1.0.5",
         "csv-parse": "^4.4.6",
         "csv-stringify": "^5.3.3",
         "dalamb": "^0.2.0",
