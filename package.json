@@ -46,7 +46,7 @@
         "csv-stringify": "^5.3.3",
         "dalamb": "^0.2.0",
         "lambda-log": "^2.3.1",
-        "lodash": "^4.17.15",
+        "lodash": "^4.17.21",
         "moment": "^2.24.0",
         "source-map-support": "^0.5.13"
     },
