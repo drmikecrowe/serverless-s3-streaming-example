@@ -59,7 +59,7 @@
         "@types/lodash": "^4.14.139",
         "@types/moment": "^2.13.0",
         "@types/node": "10",
-        "aws-sdk": "^2.535.0",
+        "aws-sdk": "^2.814.0",
         "babel-loader": "^8.0.6",
         "cache-loader": "^4.1.0",
         "faker": "^4.1.0",
